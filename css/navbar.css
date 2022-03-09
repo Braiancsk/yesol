@@ -38,6 +38,7 @@ header.nav{
 }
 header.nav nav ul li a{
     text-decoration:none;
+    color:#153B69;
     transition: 0.1s ease-in-out;
 }
 nav.nav ul li a:hover{

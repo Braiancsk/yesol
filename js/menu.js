@@ -7,11 +7,7 @@ burger.addEventListener('click',()=>{
     handleCloseMenu()
 });
 
-links.forEach(link =>{
-    link.addEventListener('click',()=>{
-        handleCloseMenu()
-    })
-})
+
 
 bg.addEventListener('click',()=>{
     handleCloseMenu()

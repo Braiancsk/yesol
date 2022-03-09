@@ -732,12 +732,6 @@ section.duvida h2{
     .swiper__slide img, .swiper__slide p{
         max-width:380px;
     }
-
-    footer p{
-        font-size:14px;
-        margin:20px 0;
-    }
-
     section.hero a{
         max-width:172px;
         width: 100%;
@@ -764,9 +758,10 @@ section.duvida h2{
     section.blog h2 > strong{
         font-size:30px;
     }
-    .personalizado__content-icon{
-        margin: 0 auto;
+    .gap-md-2{
+        gap: 20px;
     }
+
 }
 
 @media screen and (min-width: 768px){
