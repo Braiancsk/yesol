@@ -1,3 +1,17 @@
+.logo{
+    max-width:352px;
+    width: 100%;
+}
+
+nav.nav{
+    max-width:760px;
+    width: 100%;
+}
+
+.nav-active{
+    font-weight: bold;
+}
+
 header.nav nav ul li{
     list-style-type:none;
 }
@@ -6,10 +20,15 @@ header.nav nav ul li a{
     text-decoration:none;
 }
 
+.max-w-176{
+    max-width:176px;
+    width: 100%;
+}
+
 .btn-nav{
     border:0;
     border-radius: 8px;
-    max-width: 234px;
+    max-width: 176px;
     width: 100%;
     color:#542D00;
     background-color:var(--primary-background);
