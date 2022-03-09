@@ -10,14 +10,29 @@ nav.nav{
 
 .nav-active{
     font-weight: bold;
+    position: relative;
+}
+.nav-active:after{
+    content: "";
+    width: 100%;
+    height: 6px;
+    background-color:#FFB600;
+    border-radius:25px;
+    position: absolute;
+    bottom:-6px;
+    left:0;
 }
 
-header.nav nav ul li{
+li{
     list-style-type:none;
 }
 
 header.nav nav ul li a{
     text-decoration:none;
+    transition: 0.1s ease-in-out;
+}
+nav.nav ul li a:hover{
+    color:#2761a8;
 }
 
 .max-w-176{
@@ -39,4 +54,57 @@ header.nav nav ul li a{
     transition: 0.1s ease-in-out;
     text-decoration: none;
     display: block;
+}
+
+.btn-nav:hover{
+    color: #542d00 !important;
+    background-color:#f0a103;
+}
+
+.menu{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 70%;
+    height:100vh;
+    background-color:white;
+    border-radius: 0 8px 8px 0;
+    padding:20px;
+    transition: 0.1s ease-in-out;
+    transform:translateX(-200%);
+    z-index: 99;
+}
+
+.menu-active{
+    transform: translateX(0%);
+}
+
+.menu__links ul{
+    padding:20px;
+}
+
+.menu__links a{
+    text-decoration:none;
+    transition: 0.1s ease-in-out;
+}
+
+.bg{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 9;
+    height:100vh;
+    background-color:rgba(0, 0, 0, 0.801);
+    display: none;
+}
+
+.bg-active{
+    display:block;
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+    background:#153B69;
+}
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after{
+    background:rgb(255, 255, 255);
 }

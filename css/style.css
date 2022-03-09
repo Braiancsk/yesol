@@ -151,6 +151,7 @@ section.hero a{
 .hero__img{
     max-width:900px;
     width: 100%;
+    margin: 0 auto;
 } 
 
 .hero__limit-content{
