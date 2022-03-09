@@ -29,6 +29,12 @@ li{
 header.nav{
     background: #FFFFFF;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9;
 }
 header.nav nav ul li a{
     text-decoration:none;
@@ -109,5 +115,24 @@ nav.nav ul li a:hover{
     background:#153B69;
 }
 .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after{
-    background:rgb(255, 255, 255);
+    background:#153B69;
+}
+
+@media screen and (max-width: 1200px){
+    .logo img{
+        max-width:180px;
+    }
+    .mobile-btn{
+        border:0;
+        color:#542D00;
+        font-size: 12px;
+        text-align:center;
+        text-decoration: none;
+        max-width:100px;
+        width: 100%;
+        background-color: var(--primary-background);
+        padding: 8px;
+        border-radius: 2px;
+        font-weight: 500;
+    }
 }
