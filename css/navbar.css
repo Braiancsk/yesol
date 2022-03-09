@@ -1,0 +1,23 @@
+header.nav nav ul li{
+    list-style-type:none;
+}
+
+header.nav nav ul li a{
+    text-decoration:none;
+}
+
+.btn-nav{
+    border:0;
+    border-radius: 8px;
+    max-width: 234px;
+    width: 100%;
+    color:#542D00;
+    background-color:var(--primary-background);
+    text-align:center;
+    padding:10px;
+    font-size:18px;
+    font-weight:500;
+    transition: 0.1s ease-in-out;
+    text-decoration: none;
+    display: block;
+}
