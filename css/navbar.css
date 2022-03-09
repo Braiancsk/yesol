@@ -26,7 +26,10 @@ nav.nav{
 li{
     list-style-type:none;
 }
-
+header.nav{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+}
 header.nav nav ul li a{
     text-decoration:none;
     transition: 0.1s ease-in-out;

@@ -8,6 +8,7 @@
 body{
     scroll-behavior: smooth;
     overflow-x: hidden;
+    background-color:#F5F5F4;
 }
 
 :root{
@@ -77,7 +78,20 @@ body{
 .btn-primary:hover{
     filter: opacity(0.90);
 }
-
+.bg-primary{
+    background-color:var(--secondary-background);
+    color:white;
+}
+.bg-transparent{
+    background-color:transparent;
+    color:#00396F;
+    border: 1px solid #00396F;
+    border-radius:6px;
+}
+.bg-transparent:hover{
+    color:white;
+    background-color:var(--secondary-background);
+}
 .text-white{
     color:white!important;
 }
@@ -181,7 +195,7 @@ section.hero a{
     color:#677E9A;
     background-color:var(--icon-bg);
     border-radius: 25px;
-    padding:8px;
+    padding:8px 20px;
     max-width:222px;
     width: 100%;
     text-align:center;
@@ -199,7 +213,6 @@ section.hero a{
 section.how{
     background: #DCECFF;
     padding: 85px 0;
-    border-radius: 0px 0px 380px 0px;
 }
 
 section.how h4{
@@ -270,6 +283,8 @@ section.economia p{
     color:#181818;
     text-align: center;
     font-weight: 400;
+    max-width: 894px;
+    margin: 0 auto;
 }
 
 .economia__content-icon{
@@ -281,11 +296,17 @@ section.economia p{
     width: 100%;
 }
 
-section.economia a{
-    margin:50px auto;
+section.economia .btn-primary{
+    margin-top: 50px;
     background:var(--secondary-background);
     color:white;
-    max-width:472px;
+    max-width:363px;
+}
+
+section.economia .btn{
+    text-align: center;
+    max-width:363px;
+    margin-top: 20px;
 }
 
 section.about{
@@ -363,7 +384,7 @@ section.projects h2{
 
 .swiper {
     width: 100%;
-    height:550px;
+    height:300px;
 }
 
 .swiper-pagination-bullet-active{
@@ -425,14 +446,19 @@ section.depoimentos h2{
     color:var(--secondary-background);
     font-weight:700;
 }
-
-section.depoimentos .container{
+section.depoimentos .swiper{
     position: relative;
+    z-index: 2;
 }
 
 .quotes{
+    position: relative;
+}
+
+.quotes img{
     position: absolute;
-    top: -100px;
+    top:0;
+    right: 0;
 }
 
 .max-w-450px{
@@ -440,47 +466,45 @@ section.depoimentos .container{
 }
 
 .depoimentos__box{
-    max-width:389px;
+    max-width:577px;
     width: 100%;
     padding:30px;
-    background: #FFFFFF;
+    background: #FFFFFF; 
     box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
     border-radius: 8px;
     height: max-content;
     position: relative;
 }
 .depoimentos__box svg{
-    width: 50px;
+    width: 25px;
+    position: absolute;
+    left: 50%;
+    bottom: -19px;
+    fill: white;
 }
 .depoimentos__box p{
     color:#18191F;
+    margin-top: 10px;
+    font-size:15px;
+    text-align: center;
 }
-.depoimentos__box h6{
-    color:#18191F;
-    font-size:18px;
-    margin-top:10px;
-}
+
 .depoimentos__box h5{
-    color:#969BAB;
-    font-size:14px;
-}
-
-.depoimentos__box h3{
+    font-size: 22px;
     font-weight: 500;
-    text-align:center;
-    font-size:18px;
+    text-align: center;
     color:#18191F;
 }
 
-.depoimentos__box h4{
-    font-weight: 400;
-    text-align:center;
-    font-size:14px;
-    color:#18191F;
+.depoimentos__box-user h6{
+    color:#0D233E;
+    font-size: 18px;
+    font-weight: 700;
 }
-.my-swiper{
-    overflow:hidden;
-    height: 270px;
+
+.depoimentos__box-user p{
+    color: #1D1D1D;
+    font-size: 14px;
 }
 
 .max-w-full{
@@ -545,44 +569,105 @@ section.simulacao h2{
     text-align: center;
 }
 
-footer{
-    padding:25px 0;
-    background-color:var(--secondary-background);
-    color:white;
-}
-
-footer ul li{
-    list-style-type: none;
-}
-
-footer ul li a{
+.btn{
+    border:0;
+    padding:8px;
+    border-radius:6px;
     text-decoration: none;
-    font-size: 16px;
+}
+.btn-md{
+    max-width:250px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+.btn-bg-secondary{
+    background:#FFA901;
+    color:#542D00;
+}
+
+.btn-bg-transparent{
+    background-color:transparent;
+    color:#00396F;
+    border:1px solid #00396F;
+    margin: 0;
+    transition: 0.1s ease-in-out;
+}
+.btn-bg-transparent:hover{
+    background-color:#00396F;
     color:white;
 }
-.line{
+
+section.conheca{
+    background:var(--secondary-background);
+    padding:40px 0;
+}
+
+section.conheca h2{
+    color:#F5F5F4;
+    font-size: 45px;
+    font-weight:600
+}
+
+section.blog h2{
+    color:#545454;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    max-width:814px;
+    margin:50px auto;
+    Line-height:40px;
+}
+
+section.blog h2 > strong{
+    color:#153B69;
+    font-size: 56px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.blog__info{
+    max-width:352px;
     width: 100%;
-    height:1px;
-    background: #FFFFFF;
-    opacity: 0.4;
 }
 
-footer p{
-    color:#D9DBE1;
-    margin-top:30px;
+.blog__info h4{
+    color:#153B69;
+    font-size: 24px;
+    font-weight: 600;
+    Line-height:29,5px;
+    Letter-spacing:0.25px;
 }
 
-.footer__icons{
-    margin-top:30px;
-}
-footer svg path{
-    transition:0.1s ease-in-out;
-}
-footer a:hover svg path:nth-child(1){
-    fill: var(--primary-background);
-    opacity: 1;
+.blog__info p{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    color:#1D1D1D;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
 }
 
+.blog__info a{
+    color:#153B69;
+    font-size: 16px;
+}
+
+section.duvida{
+    background-color:#DCECFF;
+    padding:20px;
+}
+
+section.duvida h2{
+    color:#153B69;
+    font-weight: 600;
+    font-size: 45px;
+}
 
 @media screen and (max-width: 768px){
     section.hero h1{
@@ -636,7 +721,46 @@ footer a:hover svg path:nth-child(1){
         font-size:14px;
         margin:20px 0;
     }
-    
+
+    section.hero a{
+        max-width:172px;
+        width: 100%;
+        font-size: 14px;
+    }
+    .personalizado__content a{
+        max-width: 100%;
+    }
+    section.conheca h2{
+        font-size: 26px;
+    }
+    section.conheca .btn-md{
+        max-width:100%;
+    }
+    section.economia .btn-primary, section.economia .btn{
+        max-width: 100%;
+    }
+    section.blog h2, section.duvida h2{
+        font-size:24px;
+    }
+    section.duvida .btn{
+        max-width: 100%;
+    }
+    section.blog h2 > strong{
+        font-size:30px;
+    }
+    .personalizado__content-icon{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .gap-md-2{
+        gap: 20px;
+    }
+    .gap-md-3{
+        gap:30px;
+    }
+ 
 }
 
 @media screen and (max-width: 1206px){
