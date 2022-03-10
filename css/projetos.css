@@ -1,0 +1,175 @@
+section.page-title {
+  background-color: var(--secondary-background);
+  margin: 109px 0 30px 0;
+  border-bottom: 8px solid var(--primary-background);
+}
+
+section.page-title h1 {
+  color: #f5f5f4;
+  font-weight: 500;
+  padding: 20px 0;
+  font-size: 32px;
+}
+section.projetos {
+  padding: 40px 0 80px 0;
+}
+section.projetos h2 {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 68px;
+  letter-spacing: -1px;
+  text-align: center;
+  color: var(--secondary-background);
+  margin-bottom: 15px;
+}
+.form-check-input {
+  visibility: hidden;
+  z-index: -1;
+  position: absolute;
+  top: -300%;
+}
+.form-check {
+  border-radius: 8px;
+  max-width: 112px;
+  width: 100%;
+  text-align: center;
+  color: #1d1d1d;
+}
+.form-check-input:checked + .form-check-label {
+  background-color: var(--secondary-background);
+  color: white;
+  border: 1px solid var(--secondary-background);
+}
+.form-check-label {
+  border: 1px solid #1d1d1d;
+  padding: 8px;
+  border-radius: 8px;
+  max-width: 112px;
+  width: 100%;
+  text-align: center;
+  display: block;
+  color: #1d1d1d;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+  cursor: pointer;
+}
+
+section.projetos .slide {
+    max-width: 352px;
+    width: 100%;
+    margin: 30px auto;
+  }
+  .projetos__img {
+    max-width: 352px;
+    border-radius: 8px;
+    width: 100%;
+  }
+  section.projetos .projetos__title-card {
+    font-size: 24px;
+    color: #153b69;
+    font-weight: 600;
+    line-height: 29px;
+  }
+  section.projetos .projetos__economia {
+    color: #542d00;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.25px;
+    text-align: left;
+    background: #ffb600;
+    padding: 0 5px;
+    border-radius: 5px 0px 0px 5px;
+    max-width: calc(192px - 5px);
+    width: 100%;
+  }
+  section.projetos .projetos__price {
+    color: #ffffff;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    background: #6cab62;
+    border-radius: 0px 5px 5px 0px;
+    padding: 0 5px;
+    max-width: 161px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  section.projetos p {
+    color: #1d1d1d;
+    font-size: 18px;
+  }
+  section.projetos span {
+    color: #153b69;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.25px;
+  }
+
+  section.duvida {
+    background: #dcecff;
+    padding: 40px 0;
+  }
+  
+  section.duvida h2 {
+    color: #153b69;
+    font-size: 45px;
+    font-weight: 600;
+  }
+  
+  section.duvida .btn {
+    background-color: var(--secondary-background);
+    color: white;
+  }
+
+  section.projetos .btn{
+      background-color: var(--secondary-background);
+      max-width:100%;
+      padding: 8px;
+      text-align: center;
+      color:white;
+      border-radius: 8px;
+      margin: 0 auto;
+  }
+  
+@media screen and (max-width: 768px) {
+  section.page-title h1 {
+    font-size: 22px;
+  }
+  section.projetos h2 {
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 41px;
+    letter-spacing: 0px;
+  }
+  section.duvida h2 {
+    font-size: 26px;
+  }
+  section.duvida .btn-md {
+    max-width: 100%;
+  }
+  .form-check-label, .form-check{
+      max-width:82px;
+      font-size:14px;
+  }
+  .form-check-label{
+      padding:4px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  section.page-title {
+    margin: 94px 0 30px 0;
+  }
+}
