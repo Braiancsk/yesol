@@ -11,6 +11,13 @@ body{
     /* background-color:#F5F5F4; */
 }
 
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+    background-color: var(--secondary-background);
+}
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after{
+    background-color: var(--secondary-background);
+}
+
 :root{
     --primary-background: #FFA901;
     --secondary-background: #153B69;
@@ -106,8 +113,10 @@ body{
     background-color:white!important;
 }
 .swiper-pagination-bullet{
-    background: #153B69;
+    background: white;
+    border: 3px solid #153B69;
 }
+
 @media screen and (max-width: 768px){
     .text-title{
         font-size: 30px;
@@ -118,8 +127,5 @@ body{
     .gap-md-2{
         gap:20px;
     }
-}
 
-@media screen and (min-width: 768px){
- 
 }

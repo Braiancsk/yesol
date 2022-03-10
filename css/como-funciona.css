@@ -162,6 +162,109 @@ section.projetos span {
   letter-spacing: 0.25px;
 }
 
+.projetos__cta{
+    background-color: var(--secondary-background);
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    max-width: 245px;
+    width: 100%;
+    color:white;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+}
+
+section.cta{
+    background: #FFA901;
+    padding:40px 0;
+}
+.cta__title{
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: -1px;
+    text-align: left;
+    color:
+    #5E3500;
+}
+.cta__btn{
+    background-color: var(--secondary-background);
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    max-width: 245px;
+    width: 100%;
+    color:white;
+    border-radius: 8px;
+}
+
+section.equipe{
+    padding:40px 0 20px 0;
+}
+.equipe__title{
+font-size: 43px;
+font-style: normal;
+font-weight: 700;
+line-height: 84px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+.equipe__subtitle{
+    color:
+    #545454;
+    max-width:1100px;
+    margin: 0 auto;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+
+}
+.equipe__img{
+    max-width:920px;
+    width: 100%;
+    border-radius: 19px;
+}
+.equipe__item-title{
+    color:var(--secondary-background);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.equipe__description{
+    color:#1D1D1D;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    margin: 10px 0;
+}
+section.duvida {
+    background: #DCECFF;
+    padding: 40px 0;
+  }
+  
+  section.duvida h2 {
+    color: 
+    #153B69;
+    font-size: 45px;
+    font-weight: 600;
+  }
+
+  section.duvida .btn{
+      background-color: var(--secondary-background);
+      color:white;
+  }
+  
 @media screen and (max-width: 768px) {
   .how__icon h6,
   .how__icon p {
@@ -173,4 +276,48 @@ section.projetos span {
   section.conheca .btn-md {
     max-width: 100%;
   }
+  section.duvida h2 {
+    font-size: 26px;
+  }
+  section.duvida .btn-md {
+    max-width: 100%;
+  }
+  .cta__title{
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 39px;
+    text-align: center;
+    margin-bottom: 20px;
+    }
+    .projetos__cta, .cta__btn{
+        max-width:100%;
+    }
+    .equipe__description{
+        text-align: center;
+    }
+    section.page-title h1{
+        font-size:22px;
+    }
+    section.hero .row p{
+        max-width:302px;
+    }
+    .how__icon h6{
+        margin: 0;
+    }
+    .equipe__title{
+        font-size:30px;
+    }
+    .equipe__subtitle{
+        font-size:24px;
+    }
+    .equipe__img{
+        margin-bottom: 48px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    section.page-title{
+        margin:94px 0 30px 0;
+    }
 }
