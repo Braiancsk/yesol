@@ -1,101 +1,176 @@
-section.page-title{
-    background-color:var(--secondary-background);
-    margin:109px 0 30px 0;
+section.page-title {
+  background-color: var(--secondary-background);
+  margin: 109px 0 30px 0;
 }
 
-section.page-title h1{
-    color:#F5F5F4;
-    font-weight:500;
-    padding:20px 0;
-    font-size:32px;
+section.page-title h1 {
+  color: #f5f5f4;
+  font-weight: 500;
+  padding: 20px 0;
+  font-size: 32px;
 }
 
-section.hero strong{
-    color:#153B69;
-    font-weight:700;
-    font-size:18px;
+section.hero strong {
+  color: #153b69;
+  font-weight: 700;
+  font-size: 18px;
 }
 
-section.hero .row p{
-    color:black;
-    font-weight:400;
-    max-width:248px;
-    font-size:14px;
+section.hero .row p {
+  color: black;
+  font-weight: 400;
+  max-width: 248px;
+  font-size: 14px;
 }
 
-section.how{
-    background: #DCECFF;
-    padding: 85px 0;
+section.how {
+  background: #dcecff;
+  padding: 85px 0;
 }
 
-section.how h4{
-    font-weight:500;
-    text-align:center;
-    color:var(--text-color);
+section.how h4 {
+  font-weight: 500;
+  text-align: center;
+  color: var(--text-color);
 }
 
-section.how h2{
-    font-weight:700;
-    text-align:center;
-    color:var(--secondary-background);
+section.how h2 {
+  font-weight: 700;
+  text-align: center;
+  color: var(--secondary-background);
 }
 
-.how__icon h6{
-    font-size: 17px;
-    font-weight: 700;
-    text-align: left;
-    color:var(--secondary-background);
-    margin-top: 10px;
+.how__icon h6 {
+  font-size: 17px;
+  font-weight: 700;
+  text-align: left;
+  color: var(--secondary-background);
+  margin-top: 10px;
 }
 
-.how__icon p{
-    font-size: 18px;
-    text-align: left;
-    color:#1D1D1D;
-    font-weight:400;
+.how__icon p {
+  font-size: 18px;
+  text-align: left;
+  color: #1d1d1d;
+  font-weight: 400;
 }
 
-.how a{
-    margin:50px auto;
-    background:var(--secondary-background);
-    color:white;
-    max-width:472px;
+.how a {
+  margin: 50px auto;
+  background: var(--secondary-background);
+  color: white;
+  max-width: 472px;
 }
-.circle-icon{
-    height:46px;
-    width: 46px;
-    border-radius:50%;
-    background-color:#CAE2FF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.circle-icon {
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+  background-color: #cae2ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.circle-icon h6{
-    color:var(--secondary-background);
-    font-weight:600;
-    font-size:22px;
-}
-
-section.conheca{
-    background:var(--secondary-background);
-    padding:40px 0;
+.circle-icon h6 {
+  color: var(--secondary-background);
+  font-weight: 600;
+  font-size: 22px;
 }
 
-section.conheca h2{
-    color:#F5F5F4;
-    font-size: 45px;
-    font-weight:600
+section.conheca {
+  background: var(--secondary-background);
+  padding: 40px 0;
 }
-@media screen and (max-width: 768px){
-    
-    .how__icon h6, .how__icon p{
-        text-align: center;
-    }
-    section.conheca h2{
-        font-size: 26px;
-    }
-    section.conheca .btn-md{
-        max-width:100%;
-    }
 
+section.conheca h2 {
+  color: #f5f5f4;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+section.projetos {
+  padding: 60px 0;
+}
+
+section.projetos .projetos__title {
+  line-height: 76px;
+  letter-spacing: 0em;
+  text-align: center;
+  display: block;
+  color: #153b69;
+}
+section.projetos .swiper2 {
+  overflow: hidden;
+  position: relative;
+  height: 550px;
+}
+section.projetos .swiper-slide .slide {
+  max-width: 352px;
+  width: 100%;
+  margin:0 auto;
+}
+.projetos__img {
+  max-width: 352px;
+  border-radius: 8px;
+  width: 100%;
+}
+section.projetos .projetos__title-card {
+  font-size: 24px;
+  color: #153b69;
+  font-weight: 600;
+  line-height: 29px;
+}
+section.projetos .projetos__economia {
+  color: #542d00;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  background: #ffb600;
+  padding: 0 5px;
+  border-radius: 5px 0px 0px 5px;
+  max-width: calc(192px - 5px);
+  width: 100%;
+}
+section.projetos .projetos__price {
+  color: #ffffff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  background: #6cab62;
+  border-radius: 0px 5px 5px 0px;
+  padding: 0 5px;
+  max-width: 161px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.projetos .swiper2 p {
+  color: #1d1d1d;
+  font-size: 18px;
+}
+section.projetos span {
+  color: #153b69;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.25px;
+}
+
+@media screen and (max-width: 768px) {
+  .how__icon h6,
+  .how__icon p {
+    text-align: center;
+  }
+  section.conheca h2 {
+    font-size: 26px;
+  }
+  section.conheca .btn-md {
+    max-width: 100%;
+  }
 }

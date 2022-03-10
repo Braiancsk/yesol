@@ -101,8 +101,13 @@ body{
     background-color:#00396F;
     color:white;
 }
-
-
+.swiper-pagination-bullet .swiper-pagination-bullet-active{
+    border: 3px solid #153B69;
+    background-color:white!important;
+}
+.swiper-pagination-bullet{
+    background: #153B69;
+}
 @media screen and (max-width: 768px){
     .text-title{
         font-size: 30px;
