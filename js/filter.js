@@ -1,5 +1,7 @@
 let options = document.querySelectorAll(".form-check-input");
 let cards = document.querySelector("[data-cards]");
+
+//basta apenas inserir aqui em forma de JSON que o JS faz o resto
 let cardsArr = [
   {
     url: "images/torre.webp",
@@ -8,7 +10,7 @@ let cardsArr = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet vel, eu massa.",
     modules: "272 Módulos",
     energy: "272 Módulos",
-    economy: 86.7,
+    economy: 86.700,
     categories: "fazenda",
   },
   {
@@ -18,7 +20,7 @@ let cardsArr = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet vel, eu massa.",
     modules: "272 Módulos",
     energy: "272 Módulos",
-    economy: 86.7,
+    economy: 86.700,
     categories: "casa",
   },
   {
@@ -28,7 +30,7 @@ let cardsArr = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet vel, eu massa.",
     modules: "272 Módulos",
     energy: "272 Módulos",
-    economy: 86.7,
+    economy: 86.700,
     categories: "casa",
   },
   {
@@ -38,16 +40,35 @@ let cardsArr = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet vel, eu massa.",
     modules: "272 Módulos",
     energy: "272 Módulos",
-    economy: 86.7,
+    economy: 86.700,
+    categories: "empresa",
+  },
+  {
+    url: "images/casa.webp",
+    title: "Casa no centro",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet vel, eu massa.",
+    modules: "272 Módulos",
+    energy: "272 Módulos",
+    economy: 86.700,
+    categories: "casa",
+  },
+  {
+    url: "images/hotel.webp",
+    title: "Torre de transmissão",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet vel, eu massa.",
+    modules: "272 Módulos",
+    energy: "272 Módulos",
+    economy: 86.700,
     categories: "empresa",
   },
 ];
 
 cardsArr.map((card) => {
-
-    cards.insertAdjacentHTML(
-      "afterbegin",
-      `
+  cards.insertAdjacentHTML(
+    "afterbegin",
+    `
    <div class="col-xl-4" data-fazenda>
 <div class="slide">
 <img
@@ -110,16 +131,16 @@ ${card.description}
 </div>
 
 `
-    );
-  });
+  );
+});
 
-let filteredCards
+let filteredCards;
 
 options.forEach((option) => {
   option.addEventListener("change", (e) => {
     switch (e.target.id) {
       case "todos":
-        cards.innerHTML = ''
+        cards.innerHTML = "";
         cardsArr.map((card) => {
           cards.insertAdjacentHTML(
             "afterbegin",
@@ -190,8 +211,8 @@ options.forEach((option) => {
         });
         break;
       case "casas":
-        cards.innerHTML = ''
-        filteredCards = cardsArr.filter(card => card.categories == 'casa')
+        cards.innerHTML = "";
+        filteredCards = cardsArr.filter((card) => card.categories == "casa");
         filteredCards.map((card) => {
           cards.insertAdjacentHTML(
             "afterbegin",
@@ -262,8 +283,8 @@ options.forEach((option) => {
         });
         break;
       case "empresas":
-        cards.innerHTML = ''
-        filteredCards = cardsArr.filter(card => card.categories == 'empresa')
+        cards.innerHTML = "";
+        filteredCards = cardsArr.filter((card) => card.categories == "empresa");
         filteredCards.map((card) => {
           cards.insertAdjacentHTML(
             "afterbegin",
@@ -334,8 +355,8 @@ options.forEach((option) => {
         });
         break;
       case "fazendas":
-        cards.innerHTML = ''
-        filteredCards = cardsArr.filter(card => card.categories == 'fazenda')
+        cards.innerHTML = "";
+        filteredCards = cardsArr.filter((card) => card.categories == "fazenda");
         filteredCards.map((card) => {
           cards.insertAdjacentHTML(
             "afterbegin",

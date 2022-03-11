@@ -1,0 +1,19 @@
+section.page-title {
+    background-color: #FFB600;
+    margin: 109px 0 30px 0;
+    border-bottom: 8px solid var(--secondary-background);
+  }
+  
+  section.page-title h1 {
+    color: #542D00;
+    font-weight: 500;
+    padding: 20px 0;
+    font-size: 32px;
+  }
+
+@media screen and (max-width: 1200px) {
+    section.page-title {
+      margin: 94px 0 30px 0;
+    }
+  }
+  

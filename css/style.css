@@ -108,6 +108,7 @@ header.top{
 
 section.hero{
     position:relative;
+    margin-top: 112px;
 }
 
 .squares{
@@ -761,10 +762,16 @@ section.duvida h2{
     .gap-md-2{
         gap: 20px;
     }
+    .blog__info h4{
+        font-size:20px;
+    }
 
 }
 
 @media screen and (min-width: 768px){
+    .gap-md-1{
+        gap: 10px;
+    }
     .gap-md-2{
         gap: 20px;
     }
@@ -781,6 +788,9 @@ section.duvida h2{
 
     .about__img img{
         max-width:680px;
+    }
+    section.hero{
+        margin-top:96px;
     }
 
 }

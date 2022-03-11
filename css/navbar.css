@@ -139,3 +139,12 @@ nav.nav ul li a:hover{
         font-weight: 500;
     }
 }
+
+@media screen and (max-width: 768px){
+    .menu .max-w-176{
+        max-width:100%;
+    }
+    .menu .btn-nav{
+        max-width:100%;
+    }
+}

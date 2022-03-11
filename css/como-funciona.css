@@ -311,6 +311,14 @@ section.duvida .btn {
   .equipe__img {
     margin-bottom: 48px;
   }
+  section.projetos .projetos__title{
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  section.projetos{
+    padding: 0 0 40px 0;
+  }
 }
 
 @media screen and (max-width: 1200px) {
