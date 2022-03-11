@@ -113,10 +113,10 @@ nav.nav ul li a:hover{
     display:block;
 }
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
-    background:#153B69!important;
+    background:#153B69;
 }
 .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after{
-    background:#153B69!important;
+    background:#153B69;
 }
 
 @media screen and (max-width: 1200px){

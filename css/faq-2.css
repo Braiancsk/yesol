@@ -1,0 +1,231 @@
+:root {
+  --primary: #153b69;
+  --lighter-primary: #7389a5;
+  --secondary: #fab519;
+  --link: #1f64bb;
+  --background: #f5f5f4;
+  --text: #1d1d1d;
+  --lighter-text: #1d1d1d;
+  --alt-text: #542d00;
+}
+/*ÍNICIO ESTILO DO SUB-HEADER*/
+div.sub__header {
+  background-color: var(--primary);
+  padding: 2rem 1rem;
+  border-bottom: 8px solid #ffb600;
+  margin-top: 6.5rem;
+  width: 100%;
+}
+div.sub__header strong {
+  font-weight: 500;
+  color: var(--background);
+  font-size: 2rem;
+  margin-left: 0.5rem;
+}
+div.sub__header li a {
+  text-decoration: none;
+  color: var(--background);
+}
+/*FIM DO ESTILO DO SUB-HEADER*/
+
+/*ÍNICIO DO ESTILO DAS FAQs*/
+.sistema {
+  padding: 2rem 0;
+  position: relative;
+}
+.funcionamento {
+  padding: 2rem 0;
+  position: relative;
+  overflow: hidden;
+}
+.wrapper{
+  max-width: 872px;
+  display: flex;
+  flex-direction: column;
+}
+.pagamento {
+  padding: 2rem 0;
+  position: relative;
+}
+.sistema strong {
+  font-size: 2.313rem;
+  font-weight: 500;
+  line-height: 32px;
+  color: var(--primary);
+}
+.funcionamento strong {
+  font-size: 2.313rem;
+  font-weight: 500;
+  line-height: 32px;
+  color: var(--primary);
+}
+.pagamento strong {
+  font-size: 2.313rem;
+  font-weight: 500;
+  line-height: 32px;
+  color: var(--primary);
+}
+.perguntas{
+  position: relative;
+}
+.perguntas span {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 0.875rem;
+  border-radius: 1.3rem;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+.perguntas p {
+  margin: 0.875rem;
+  font-size: 1.25rem;
+  line-height: 28px;
+  opacity: 0;
+  z-index: -1;
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: 0.1s ease-in-out;
+}
+.arrow-up svg{
+  transform: rotate(180deg);
+}
+.arrow-up svg path:first-child{
+  fill: #f5f5f4!important;
+}
+.arrow-up svg path{
+  stroke: var(--primary)!important;
+}
+.question-selected {
+  background: var(--primary);
+  color: #f5f5f4 !important;
+}
+.answer-selected {
+  z-index: 1 !important;
+  opacity: 1 !important;
+  height: auto !important;
+  overflow: auto !important;
+}
+.square {
+  position: absolute;
+  top: 135px;
+  left: -221px;
+  display: none!important;
+}
+.square-2 {
+  position: absolute;
+  top: 54px;
+  right: -221px;
+  display: none!important;
+}
+.square-3{
+  position: absolute;
+  top: -206px;
+  left: -221px;
+  display: none!important;
+}
+/*FIM DO ESTILO DAS FAQs*/
+
+/*ÍNICIO DO ESTILO FAQ*/
+section.faq {
+  margin-top: 8rem;
+}
+.__faq {
+  gap: 2rem;
+}
+.__faq img {
+  max-width: 100%;
+}
+.__faq strong {
+  font-size: 2.875rem;
+  color: var(--primary);
+}
+.faq a {
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  background: var(--primary);
+  cursor: pointer;
+  font-size: 1.125rem;
+  max-width: 245px;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 1404px){
+  .square {
+    left: -95px;
+  }
+  .square-2 {
+    right: -95px;
+  }
+  .square-3{
+    left: -95px;
+  }
+}
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+@media (max-width: 991px) {
+  .__faq strong {
+    font-size: 2rem;
+  }
+  .contato button {
+    margin: 2rem auto;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .comentario__area button {
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+  .faq a {
+    margin: 1rem 0;
+    max-width: 100%;
+  }
+  .veja__mais a {
+    display: block;
+    width: 100%;
+  }
+}
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+  .barra__de__pesquisa img {
+    top: 45px;
+  }
+  .faq__arrow {
+    top: 14px; 
+  }
+}
+@media (max-width: 574px) {
+  .blog h1 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.25px;
+    text-align: left;
+  }
+}
+@media (max-width: 544px){
+  .perguntas span {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 503px) {
+  .__faq strong {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 456px) {
+  .logo img {
+    max-width: 180px !important;
+  }
+}
