@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/hamburgers.min.css" />
     <link
       rel="stylesheet"
@@ -32,14 +32,17 @@
           <img src="images/logo.png" alt="logo da empresa" />
         </a>
 
-        <ul class="d-flex flex-column gap-2">
-          <li><a  href="#" data-links>Inicio</a></li>
+        <ul class="d-flex flex-column gap-3">
+          <li><a href="#" data-links>Inicio</a></li>
           <li><a href="como-funciona.html" data-links>Como funciona?</a></li>
           <li><a href="blog.html" data-links>Blog</a></li>
           <li><a href="projetos.html" data-links>Projetos</a></li>
-          <li><a href="perguntas-frequentes.html" data-links>Perguntas frequentes</a></li>
-         
-      </ul>
+          <li>
+            <a href="perguntas-frequentes.html" data-links
+              >Perguntas frequentes</a
+            >
+          </li>
+        </ul>
       </nav>
     </div>
 
@@ -62,13 +65,16 @@
         </button>
 
         <nav class="nav d-xl-block d-none">
-          <ul class="d-flex gap-2 align-items-center">
-            <li><a  href="index.html" data-links>Inicio</a></li>
+          <ul class="d-flex gap-3 align-items-center">
+            <li><a href="index.html" data-links>Inicio</a></li>
             <li><a href="como-funciona.html" data-links>Como funciona?</a></li>
             <li><a href="blog.html" data-links>Blog</a></li>
             <li><a href="projetos.html" data-links>Projetos</a></li>
-            <li><a href="perguntas-frequentes.html" data-links>Perguntas frequentes</a></li>
-           
+            <li>
+              <a href="perguntas-frequentes.html" data-links
+                >Perguntas frequentes</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
@@ -76,210 +82,864 @@
 
     <section class="page-title">
       <div class="container">
-        <h1 class="d-flex align-items-center gap-1">
-            <svg width="22" height="25" viewBox="0 0 22 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19.5312 0H2.34375C1.09375 0 0 1.09375 0 2.34375V22.6562C0 23.9062 1.09375 25 2.34375 25H19.5312C20.7812 25 21.875 23.9062 21.875 22.6562V2.34375C21.875 1.09375 20.7812 0 19.5312 0ZM6.25 21.25C6.25 21.5625 5.9375 21.875 5.625 21.875H3.75C3.4375 21.875 3.125 21.5625 3.125 21.25V19.375C3.125 19.0625 3.4375 18.75 3.75 18.75H5.625C5.9375 18.75 6.25 19.0625 6.25 19.375V21.25ZM6.25 15C6.25 15.3125 5.9375 15.625 5.625 15.625H3.75C3.4375 15.625 3.125 15.3125 3.125 15V13.125C3.125 12.8125 3.4375 12.5 3.75 12.5H5.625C5.9375 12.5 6.25 12.8125 6.25 13.125V15ZM12.5 21.25C12.5 21.5625 12.1875 21.875 11.875 21.875H10C9.6875 21.875 9.375 21.5625 9.375 21.25V19.375C9.375 19.0625 9.6875 18.75 10 18.75H11.875C12.1875 18.75 12.5 19.0625 12.5 19.375V21.25ZM12.5 15C12.5 15.3125 12.1875 15.625 11.875 15.625H10C9.6875 15.625 9.375 15.3125 9.375 15V13.125C9.375 12.8125 9.6875 12.5 10 12.5H11.875C12.1875 12.5 12.5 12.8125 12.5 13.125V15ZM18.75 21.25C18.75 21.5625 18.4375 21.875 18.125 21.875H16.25C15.9375 21.875 15.625 21.5625 15.625 21.25V13.125C15.625 12.8125 15.9375 12.5 16.25 12.5H18.125C18.4375 12.5 18.75 12.8125 18.75 13.125V21.25ZM18.75 8.75C18.75 9.0625 18.4375 9.375 18.125 9.375H3.75C3.4375 9.375 3.125 9.0625 3.125 8.75V3.75C3.125 3.4375 3.4375 3.125 3.75 3.125H18.125C18.4375 3.125 18.75 3.4375 18.75 3.75V8.75Z" fill="#542D00"/>
-            </svg>
-                
+        <h1 class="d-flex align-items-center gap-2">
+          <svg
+            width="22"
+            height="25"
+            viewBox="0 0 22 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19.5312 0H2.34375C1.09375 0 0 1.09375 0 2.34375V22.6562C0 23.9062 1.09375 25 2.34375 25H19.5312C20.7812 25 21.875 23.9062 21.875 22.6562V2.34375C21.875 1.09375 20.7812 0 19.5312 0ZM6.25 21.25C6.25 21.5625 5.9375 21.875 5.625 21.875H3.75C3.4375 21.875 3.125 21.5625 3.125 21.25V19.375C3.125 19.0625 3.4375 18.75 3.75 18.75H5.625C5.9375 18.75 6.25 19.0625 6.25 19.375V21.25ZM6.25 15C6.25 15.3125 5.9375 15.625 5.625 15.625H3.75C3.4375 15.625 3.125 15.3125 3.125 15V13.125C3.125 12.8125 3.4375 12.5 3.75 12.5H5.625C5.9375 12.5 6.25 12.8125 6.25 13.125V15ZM12.5 21.25C12.5 21.5625 12.1875 21.875 11.875 21.875H10C9.6875 21.875 9.375 21.5625 9.375 21.25V19.375C9.375 19.0625 9.6875 18.75 10 18.75H11.875C12.1875 18.75 12.5 19.0625 12.5 19.375V21.25ZM12.5 15C12.5 15.3125 12.1875 15.625 11.875 15.625H10C9.6875 15.625 9.375 15.3125 9.375 15V13.125C9.375 12.8125 9.6875 12.5 10 12.5H11.875C12.1875 12.5 12.5 12.8125 12.5 13.125V15ZM18.75 21.25C18.75 21.5625 18.4375 21.875 18.125 21.875H16.25C15.9375 21.875 15.625 21.5625 15.625 21.25V13.125C15.625 12.8125 15.9375 12.5 16.25 12.5H18.125C18.4375 12.5 18.75 12.8125 18.75 13.125V21.25ZM18.75 8.75C18.75 9.0625 18.4375 9.375 18.125 9.375H3.75C3.4375 9.375 3.125 9.0625 3.125 8.75V3.75C3.125 3.4375 3.4375 3.125 3.75 3.125H18.125C18.4375 3.125 18.75 3.4375 18.75 3.75V8.75Z"
+              fill="#542D00"
+            />
+          </svg>
 
-            Simular
+          Simular
         </h1>
       </div>
     </section>
 
-   
+    <section class="simulacao">
+      <div class="container">
+        <h2>Olá, vamos fazer sua simulação?</h2>
 
-    
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <img
-            class="img-fluid"
-            src="images/logo-footer.png"
-            alt="logo da empresa"
-          />
-          <p>
-            Lorem ipsum dolor amet, consectetur adipiscing elit. Eget nisl
-            nunc quam ac sed turpis volutpat. Cursus sed massa non nisi,
-            placerat.
-          </p>
-          <div class="d-flex justify-content-md-start justify-content-center gap-1 my-3">
-            <a href="#">
+        <div class="row my-5">
+          <div class="col-md-3 d-none d-md-flex flex-column gap-10">
+            <div
+              class="d-flex align-items-center gap-2 active-form"
+              data-first-step
+            >
               <svg
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
+                width="50"
+                height="50"
+                viewBox="0 0 50 50"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  opacity="0.1"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z"
-                  fill="white"
+                  d="M0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25Z"
+                  fill="#153B69"
                 />
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M16.0009 7.4668C13.6834 7.4668 13.3925 7.47693 12.4823 7.51835C11.5739 7.55995 10.9538 7.70378 10.4112 7.9148C9.84993 8.13276 9.37384 8.42432 8.89952 8.89881C8.42485 9.37313 8.13329 9.84922 7.91462 10.4103C7.70307 10.9531 7.55906 11.5733 7.51818 12.4814C7.47746 13.3917 7.4668 13.6827 7.4668 16.0002C7.4668 18.3178 7.47711 18.6077 7.51835 19.5179C7.56013 20.4264 7.70395 21.0465 7.9148 21.5891C8.13294 22.1503 8.4245 22.6264 8.89899 23.1007C9.37313 23.5754 9.84922 23.8677 10.4101 24.0856C10.9531 24.2967 11.5733 24.4405 12.4816 24.4821C13.3918 24.5235 13.6825 24.5336 15.9999 24.5336C18.3176 24.5336 18.6075 24.5235 19.5178 24.4821C20.4262 24.4405 21.047 24.2967 21.59 24.0856C22.151 23.8677 22.6264 23.5754 23.1006 23.1007C23.5752 22.6264 23.8668 22.1503 24.0855 21.5893C24.2952 21.0465 24.4392 20.4262 24.4819 19.5181C24.5228 18.6079 24.5335 18.3178 24.5335 16.0002C24.5335 13.6827 24.5228 13.3918 24.4819 12.4816C24.4392 11.5732 24.2952 10.9531 24.0855 10.4105C23.8668 9.84922 23.5752 9.37313 23.1006 8.89881C22.6259 8.42414 22.1512 8.13258 21.5894 7.9148C21.0454 7.70378 20.425 7.55995 19.5165 7.51835C18.6063 7.47693 18.3165 7.4668 15.9983 7.4668H16.0009ZM15.2354 9.00457C15.4626 9.00421 15.7161 9.00457 16.0009 9.00457C18.2793 9.00457 18.5494 9.01274 19.4491 9.05363C20.2811 9.09168 20.7327 9.2307 21.0335 9.3475C21.4317 9.50217 21.7156 9.68706 22.0141 9.98573C22.3128 10.2844 22.4977 10.5688 22.6527 10.9671C22.7695 11.2675 22.9087 11.7191 22.9466 12.5511C22.9875 13.4507 22.9963 13.7209 22.9963 15.9982C22.9963 18.2756 22.9875 18.5458 22.9466 19.4454C22.9085 20.2774 22.7695 20.729 22.6527 21.0294C22.498 21.4276 22.3128 21.7112 22.0141 22.0097C21.7154 22.3084 21.4319 22.4932 21.0335 22.6479C20.733 22.7652 20.2811 22.9039 19.4491 22.942C18.5495 22.9828 18.2793 22.9917 16.0009 22.9917C13.7223 22.9917 13.4522 22.9828 12.5527 22.942C11.7207 22.9036 11.2691 22.7645 10.9681 22.6477C10.5699 22.4931 10.2855 22.3082 9.98679 22.0095C9.68812 21.7108 9.50323 21.4271 9.3482 21.0287C9.2314 20.7282 9.0922 20.2767 9.05433 19.4447C9.01344 18.5451 9.00527 18.2749 9.00527 15.9961C9.00527 13.7173 9.01344 13.4485 9.05433 12.549C9.09238 11.717 9.2314 11.2654 9.3482 10.9646C9.50287 10.5664 9.68812 10.2819 9.98679 9.98324C10.2855 9.68457 10.5699 9.49968 10.9681 9.34466C11.2689 9.22732 11.7207 9.08866 12.5527 9.05043C13.3399 9.01488 13.645 9.00421 15.2354 9.00243V9.00457ZM20.556 10.4215C19.9906 10.4215 19.532 10.8796 19.532 11.4451C19.532 12.0105 19.9906 12.4691 20.556 12.4691C21.1213 12.4691 21.58 12.0105 21.58 11.4451C21.58 10.8798 21.1213 10.4215 20.556 10.4215ZM16.0009 11.6179C13.5808 11.6179 11.6187 13.5801 11.6187 16.0002C11.6187 18.4203 13.5808 20.3816 16.0009 20.3816C18.4211 20.3816 20.3825 18.4203 20.3825 16.0002C20.3825 13.5801 18.4211 11.6179 16.0009 11.6179ZM16.0009 13.1557C17.5718 13.1557 18.8454 14.4292 18.8454 16.0002C18.8454 17.5711 17.5718 18.8447 16.0009 18.8447C14.4299 18.8447 13.1564 17.5711 13.1564 16.0002C13.1564 14.4292 14.4299 13.1557 16.0009 13.1557Z"
-                  fill="white"
+                  d="M23.8443 33H27.3003V15.504H21.5163V18.6H23.8443V33Z"
+                  fill="#F9F9F9"
                 />
               </svg>
-            </a>
+              Dados técnicos
+            </div>
 
-            <a href="#">
+            <div
+              class="d-flex align-items-center gap-2 next-form"
+              data-second-step
+            >
               <svg
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
+                width="50"
+                height="50"
+                viewBox="0 0 50 50"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  opacity="0.1"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z"
-                  fill="white"
+                  d="M0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25Z"
+                  fill="#E3E3E3"
                 />
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M24.5335 15.9883C24.5335 16.5654 24.4747 17.1417 24.3593 17.7034C24.2468 18.2518 24.0801 18.7902 23.8618 19.3049C23.6485 19.8105 23.3839 20.2977 23.0747 20.7521C22.7701 21.2036 22.4192 21.6271 22.0338 22.0133C21.6475 22.3977 21.2225 22.7476 20.7712 23.0535C20.3154 23.3605 19.8275 23.6247 19.3216 23.8391C18.8061 24.0562 18.2665 24.2227 17.7186 24.335C17.1561 24.4507 16.5777 24.5098 15.9997 24.5098C15.4214 24.5098 14.843 24.4507 14.2813 24.335C13.7326 24.2227 13.1929 24.0562 12.6779 23.8391C12.1721 23.6247 11.6837 23.3605 11.2278 23.0535C10.7766 22.7476 10.3516 22.3977 9.96611 22.0133C9.58027 21.6271 9.2294 21.2036 8.92439 20.7521C8.61687 20.2977 8.35184 19.8105 8.13768 19.3049C7.9193 18.7902 7.75224 18.2518 7.63931 17.7034C7.52515 17.1417 7.4668 16.5654 7.4668 15.9883C7.4668 15.4108 7.52511 14.8332 7.63934 14.2727C7.75227 13.7243 7.91934 13.1851 8.13771 12.6712C8.35187 12.1653 8.6169 11.6776 8.92442 11.2232C9.22943 10.7714 9.5803 10.3486 9.96614 9.96207C10.3516 9.57759 10.7766 9.22852 11.2279 8.92312C11.6837 8.61478 12.1721 8.35059 12.6779 8.13587C13.193 7.91822 13.7326 7.75139 14.2814 7.63989C14.8431 7.52506 15.4214 7.4668 15.9998 7.4668C16.5777 7.4668 17.1561 7.52506 17.7186 7.63989C18.2665 7.75142 18.8061 7.91825 19.3216 8.13587C19.8275 8.35056 20.3154 8.61478 20.7713 8.92312C21.2225 9.22852 21.6476 9.57759 22.0338 9.96207C22.4193 10.3486 22.7701 10.7714 23.0747 11.2232C23.3839 11.6776 23.6485 12.1653 23.8618 12.6712C24.0801 13.1851 24.2468 13.7243 24.3593 14.2727C24.4747 14.8332 24.5335 15.4108 24.5335 15.9883ZM12.8904 9.40618C10.8582 10.3645 9.34143 12.2343 8.86848 14.4879C9.0606 14.4895 12.0974 14.5278 15.5963 13.5995C14.335 11.3618 12.9875 9.53562 12.8904 9.40618ZM16.2001 14.7201C12.4479 15.8418 8.84724 15.7611 8.71808 15.7561C8.71597 15.8343 8.71223 15.91 8.71223 15.9883C8.71223 17.8577 9.41851 19.562 10.5794 20.8507C10.5769 20.8469 12.5712 17.3139 16.5039 16.0441C16.5989 16.0124 16.6956 15.9841 16.7914 15.9567C16.6085 15.5431 16.4089 15.1287 16.2001 14.7201ZM20.8125 10.5267C19.5295 9.39701 17.8448 8.71176 15.9997 8.71176C15.4076 8.71176 14.833 8.78333 14.2825 8.91564C14.3917 9.06212 15.7605 10.8754 17.0068 13.1605C19.7566 12.1312 20.7945 10.5533 20.8125 10.5267ZM17.2882 17.1625C17.2719 17.1679 17.2557 17.1725 17.2398 17.1783C12.9401 18.6751 11.536 21.6915 11.5208 21.7245C12.7579 22.6852 14.3097 23.2648 15.9998 23.2648C17.009 23.2648 17.9703 23.0596 18.8449 22.6881C18.737 22.0523 18.3136 19.8238 17.2882 17.1625ZM20.072 22.0232C21.7083 20.9206 22.8705 19.1697 23.1946 17.1416C23.0446 17.0934 21.0058 16.4489 18.6536 16.8254C19.6095 19.4485 19.9978 21.5847 20.072 22.0232ZM17.5678 14.2449C17.7369 14.5919 17.9007 14.9451 18.0519 15.3001C18.1057 15.4274 18.1582 15.5522 18.2095 15.677C20.7129 15.3625 23.1793 15.8917 23.2847 15.9133C23.2681 14.1883 22.6501 12.6051 21.6276 11.3656C21.6138 11.3851 20.445 13.0715 17.5678 14.2449Z"
-                  fill="white"
+                  d="M19.1894 32.76H31.0454V29.976H23.9654C26.7494 27.624 30.6614 24.456 30.6614 20.4C30.6614 17.352 28.7654 15.12 24.9974 15.12C21.8534 15.12 19.2854 16.968 19.1654 20.976H22.4294C22.4534 19.128 23.3414 17.976 24.9494 17.976C26.6054 17.976 27.3014 19.032 27.3014 20.592C27.3014 23.808 23.1494 26.904 19.1894 30.264V32.76Z"
+                  fill="#153B69"
+                  fill-opacity="0.6"
                 />
               </svg>
-            </a>
 
-            <a href="#">
+              Dados pessoais
+            </div>
+
+            <div
+              class="d-flex align-items-center gap-2 next-form"
+              data-third-step
+            >
               <svg
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
+                width="50"
+                height="50"
+                viewBox="0 0 50 50"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
+                <rect width="50" height="50" rx="25" fill="#E3E3E3" />
                 <path
-                  opacity="0.1"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z"
-                  fill="white"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M15.5208 13.0051L15.5544 13.5587L14.9948 13.4909C12.9579 13.2311 11.1784 12.3498 9.66756 10.8696L8.92891 10.1352L8.73865 10.6776C8.33575 11.8865 8.59316 13.1633 9.43253 14.022C9.8802 14.4965 9.77948 14.5643 9.00725 14.2819C8.73865 14.1915 8.50363 14.1237 8.48124 14.1576C8.4029 14.2367 8.6715 15.2648 8.88414 15.6716C9.17513 16.2365 9.76828 16.7902 10.4174 17.1178L10.9658 17.3777L10.3167 17.389C9.68994 17.389 9.66756 17.4003 9.73471 17.6376C9.95854 18.372 10.8427 19.1516 11.8276 19.4906L12.5214 19.7278L11.9171 20.0894C11.0218 20.6091 9.96973 20.9029 8.91772 20.9255C8.41409 20.9368 8 20.982 8 21.0159C8 21.1289 9.36538 21.7616 10.16 22.0102C12.5438 22.7446 15.3753 22.4282 17.5017 21.1741C19.0126 20.2815 20.5235 18.5076 21.2286 16.7902C21.6091 15.875 21.9896 14.2028 21.9896 13.4006C21.9896 12.8808 22.0232 12.813 22.6499 12.1916C23.0192 11.83 23.3662 11.4346 23.4333 11.3216C23.5452 11.1069 23.534 11.1069 22.9633 11.299C22.012 11.638 21.8777 11.5928 22.3477 11.0843C22.6947 10.7228 23.1088 10.0674 23.1088 9.87536C23.1088 9.84146 22.9409 9.89796 22.7506 9.99964C22.5492 10.1126 22.1015 10.2821 21.7658 10.3838L21.1614 10.5759L20.613 10.203C20.3108 9.99964 19.8856 9.77367 19.6617 9.70588C19.0909 9.5477 18.218 9.57029 17.7032 9.75107C16.3042 10.2595 15.4201 11.5702 15.5208 13.0051Z"
-                  fill="white"
+                  d="M19.1364 20.112C19.2164 18.512 19.7764 17.28 20.8164 16.416C21.8724 15.536 23.2564 15.096 24.9684 15.096C26.1364 15.096 27.1364 15.304 27.9684 15.72C28.8004 16.12 29.4244 16.672 29.8404 17.376C30.2724 18.064 30.4884 18.848 30.4884 19.728C30.4884 20.736 30.2244 21.592 29.6964 22.296C29.1844 22.984 28.5684 23.448 27.8484 23.688V23.784C28.7764 24.072 29.4964 24.584 30.0084 25.32C30.5364 26.056 30.8004 27 30.8004 28.152C30.8004 29.112 30.5764 29.968 30.1284 30.72C29.6964 31.472 29.0484 32.064 28.1844 32.496C27.3364 32.912 26.3124 33.12 25.1124 33.12C23.3044 33.12 21.8324 32.664 20.6964 31.752C19.5604 30.84 18.9604 29.496 18.8964 27.72H22.1604C22.1924 28.504 22.4564 29.136 22.9524 29.616C23.4644 30.08 24.1604 30.312 25.0404 30.312C25.8564 30.312 26.4804 30.088 26.9124 29.64C27.3604 29.176 27.5844 28.584 27.5844 27.864C27.5844 26.904 27.2804 26.216 26.6724 25.8C26.0644 25.384 25.1204 25.176 23.8404 25.176H23.1444V22.416H23.8404C26.1124 22.416 27.2484 21.656 27.2484 20.136C27.2484 19.448 27.0404 18.912 26.6244 18.528C26.2244 18.144 25.6404 17.952 24.8724 17.952C24.1204 17.952 23.5364 18.16 23.1204 18.576C22.7204 18.976 22.4884 19.488 22.4244 20.112H19.1364Z"
+                  fill="#677E9A"
                 />
               </svg>
-            </a>
 
-            <a href="#">
-              <svg
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+              Resultado
+            </div>
+          </div>
+
+          <div class="col-md-9">
+            <form action="" class="form">
+
+            <!--first step form-->
+              <div data-first-form id="first-form" class="">
+                <div
+                  class="d-md-none d-flex align-items-center gap-2 mb-5 active-form"
+                  data-first-step
+                >
+                  <svg
+                    width="50"
+                    height="50"
+                    viewBox="0 0 50 50"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25Z"
+                      fill="#153B69"
+                    />
+                    <path
+                      d="M23.8443 33H27.3003V15.504H21.5163V18.6H23.8443V33Z"
+                      fill="#F9F9F9"
+                    />
+                  </svg>
+                  Dados técnicos
+                </div>
+
+                <label class="simulador__label" for="consumo"
+                  >Quanto você gasta de energia hoje?</label
+                >
+                <input
+                  data-form-1
+                  class="simulador__form-input"
+                  type="number"
+                  name="consumo"
+                  id="consumo"
+                  placeholder="Consumo média em reais"
+                  required
+                />
+
+                <label class="simulador__label mt-md-5 mt-3" for="consumo"
+                  >O sistema será para qual uso?</label
+                >
+                <div class="d-flex flex-md-row flex-column gap-3">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input gone"
+                      type="radio"
+                      name="uso"
+                      id="residencia"
+                      checked
+                    />
+                    <label class="form-check-label" for="residencia">
+                      <svg
+                        width="34"
+                        height="34"
+                        viewBox="0 0 34 34"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M18.5938 4.80103C18.3879 4.80103 18.1821 4.87438 18.036 5.02048L3.74521 19.2843C3.42646 19.6031 3.42646 20.1081 3.74521 20.4003L6.00302 22.6581C6.1624 22.8175 6.34823 22.8967 6.56073 22.8967C6.77323 22.8967 6.98615 22.8175 7.11896 22.6581L18.5938 11.2092L27.0938 19.7092V30.4141C26.3234 30.6797 25.7389 31.3438 25.5529 32.1407H22.3125V21.2501C22.3125 20.7985 21.9672 20.4532 21.5156 20.4532H15.6719C15.2203 20.4532 14.875 20.7985 14.875 21.2501V32.1407H10.0938V24.9688C10.0938 24.5172 9.74844 24.1719 9.29688 24.1719C8.84531 24.1719 8.5 24.5172 8.5 24.9688V26.9345C7.19844 27.2533 6.18927 28.2628 5.92365 29.5643C4.62208 29.83 3.58604 30.8657 3.29385 32.1407H1.0625C0.610937 32.1407 0.265625 32.486 0.265625 32.9376C0.265625 33.3891 0.610937 33.7344 1.0625 33.7344H26.2969C26.7484 33.7344 27.0938 33.3891 27.0938 32.9376V32.6719C27.0938 32.2204 27.4391 31.8751 27.8906 31.8751C28.3422 31.8751 28.6875 32.2204 28.6875 32.6719V32.9376C28.6875 33.3891 29.0328 33.7344 29.4844 33.7344H30.2812C30.7328 33.7344 31.0781 33.3891 31.0781 32.9376C31.0781 32.486 30.7328 32.1407 30.2812 32.1407H30.2283C30.0424 31.3438 29.4578 30.6797 28.6875 30.4141V21.303L30.0421 22.6581C30.2015 22.8175 30.3873 22.8967 30.5998 22.8967C30.8123 22.8967 31.0252 22.8175 31.158 22.6581L33.4158 20.4003C33.7346 20.0815 33.7346 19.5765 33.4158 19.2843L19.1515 5.02048C19.0054 4.87438 18.7996 4.80103 18.5938 4.80103ZM18.5938 6.72058L31.7422 19.869L30.6268 20.9844L19.1515 9.5361C18.9921 9.37673 18.8062 9.29694 18.5938 9.29694C18.3813 9.29694 18.1954 9.37673 18.036 9.5361L6.56073 20.9844L5.44531 19.869L18.5938 6.72058ZM17 26.8282C17.4516 26.8282 17.7969 27.1735 17.7969 27.6251C17.7969 28.0766 17.4516 28.4219 17 28.4219C16.5484 28.4219 16.2031 28.0766 16.2031 27.6251C16.2031 27.1735 16.5484 26.8282 17 26.8282ZM8.5 28.6077V32.1407H4.96698C5.25917 31.5032 5.89687 31.0782 6.64062 31.0782C7.09219 31.0782 7.4375 30.7329 7.4375 30.2813C7.4375 29.5376 7.8625 28.8999 8.5 28.6077ZM32.9375 32.1407C32.7262 32.1407 32.5235 32.2246 32.374 32.3741C32.2246 32.5235 32.1406 32.7262 32.1406 32.9376C32.1406 33.1489 32.2246 33.3516 32.374 33.501C32.5235 33.6505 32.7262 33.7344 32.9375 33.7344C33.1488 33.7344 33.3515 33.6505 33.501 33.501C33.6504 33.3516 33.7344 33.1489 33.7344 32.9376C33.7344 32.7262 33.6504 32.5235 33.501 32.3741C33.3515 32.2246 33.1488 32.1407 32.9375 32.1407Z"
+                          fill="black"
+                        />
+                      </svg>
+
+                      Residência
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input gone"
+                      type="radio"
+                      name="uso"
+                      id="empresa"
+                    />
+                    <label class="form-check-label" for="empresa">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                      >
+                        <rect width="32" height="32" fill="url(#pattern0)" />
+                        <defs>
+                          <pattern
+                            id="pattern0"
+                            patternContentUnits="objectBoundingBox"
+                            width="1"
+                            height="1"
+                          >
+                            <use
+                              xlink:href="#image0_379_1661"
+                              transform="scale(0.015625)"
+                            />
+                          </pattern>
+                          <image
+                            id="image0_379_1661"
+                            width="64"
+                            height="64"
+                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAB8UlEQVR4nO2bQU7CQBSG/yFGFvUCkmgrXXIDlaN4DXGFid5EjgJ6A5YljAtuMIm48LmAmlJgipTOm7TvWzXzXvKGofP6pekAgiA0GZVexGH0DuDWbXmaJFr33dbcpJW5dvzjAUDdu6+5yVl+INFztSvx1MRhRC7qFNEqTqk3jV+ArS2QpdfrnX8Z8wrCA4DL9fBCKYzaQTCcTqffZfJ9wLoAS2NeQHjMDXeIMFgaAwBPZfJ9wLoFaPVPAqC7RM9VoueKqNXfjB2f7wNFPaADAInWH+nA7HM2ycZK5rPT+CZYtAALAOhed/+E5ebqpp+Nlcxnx9oElcKICAOlfsZxGK1HV/6iCG9l833AugDtIBgujUkbWLqHV4+1i+C5bL5XxGFELvXUdb19SBPkngA3osK2oKiwqLCocO0RFbYFXaiwWxnafgvdMBW2vIWuuwrvqydNkHsC3Hilwhzq7ZUKc6i3VyrMod6+qbBz9W58E/RNhZ2rN7sKc9YDPFNhVvX2RU1d15MmyD0BbkSFbUFRYVFhUeHaIypsC4oKiwpXhy/1Gt8ErVtgF4edKzjdOYCq6x1zBxxwruCk5wAqrffvOyBl37mCqvZ1VfUa3wNkAbgnwI0sAPcEuMmeG2T/bNUF+adJ5g6gST65diiMuacg+MYvwTEpQUsI6XgAAAAASUVORK5CYII="
+                          />
+                        </defs>
+                      </svg>
+
+                      Empresa
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input gone"
+                      type="radio"
+                      name="uso"
+                      id="agronegocio"
+                    />
+                    <label class="form-check-label" for="agronegocio">
+                      <svg
+                        width="31"
+                        height="31"
+                        viewBox="0 0 31 31"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                      >
+                        <rect width="31" height="31" fill="url(#pattern0)" />
+                        <defs>
+                          <pattern
+                            id="pattern0"
+                            patternContentUnits="objectBoundingBox"
+                            width="1"
+                            height="1"
+                          >
+                            <use
+                              xlink:href="#image0_107_695"
+                              transform="scale(0.015625)"
+                            />
+                          </pattern>
+                          <image
+                            id="image0_107_695"
+                            width="64"
+                            height="64"
+                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAD3UlEQVR4nO2azUsVURTAf6+0VKhFC0uJFrVK+nKTkNQfkEkf0DZa1DJtI7lJoUgyW2etpFXQrk1QUFYWggYtpNq0iEqCoIWmaGW+FvdMM2+cmXtn5r2Zea/5wWXezDlz7rnnfp07Cjk1TVGKL4WEHEkDd8M927ouAUdyUkQ7BWptBLQBr1nbcOt+GmhOwa9EOAMsYDfWr7wHWlLysSI0AWPYDRzzuG9C9fyMPJuhhkbCJKpRC8BZx/Oz2CNiUp45gzCdoI8VxerpNg9ZG2vXg2aPZ1WNrjFe8n/Pam0XCE0egLQdSJssB6ADeIN+X7cII880DcB1YAV94+OWzNEBvEM5t4IKhDMY70Sn5nD3+lvgoEN+AHs6/AHuoLK7msDZ679RgdjooVcPXAJ+ie4H4EhCPlaMAvbpzd3rfrinyTBqBFUVHaieBtgPDBGuEe4pUzVrQwOqxyzHu330uoFx1GFmQX4f99CrqtFQAF5SusJ7OXsN/21ryEPfHdQwOUOitEul3/Cf692iswz0AduAVqAf+CmyYz7vdojtzAZgQCodDdB5Kjp9HrJ+kT0JeP+26AxE9DEUe4DLwGNgFpgHloDPwCNgENjt0J8S544G2PwhOl6frFpFNh/wfpfoTBm1ICKd2D1lUsaBU8AqakFrDLAd5WzvpBFYlLrK/t2vAbglxovAHCojOwHsBDYDG4BdwEmRzVEajAeaOuIGAKmjCJzT6IViC/YKvgxcQTVYxybgKvYCpnOqHAE4j1mwjWnEbvxHVOIS9v0FzIZlOU5xLVLXIsHTzZhR7MZvj/B+mIVpAn3jXxjYsRbcrgj+lnAYFc1lYF9EG1YAE9maBJMt14jnYmgwho1PYqM9rjMhsJKuWB9E9orSd9RiFhWrsiT/FF/AMAB1AUZOy/U+KkGJS5Kpp7OuwMAHfRQ9JNeHsd2pUmZRkdwR045uvr3CbLh6lYkY9WpZEgNxz9emyU3UErVeIHgKWLJVnZEy0ouas1axcD67WImKy9EDfvemPbWK+uDZGWCzU3RWPWR+do3IQgBG5PoVdfR129wKfJH7GyHspo6po+tR3xaKqIWx3iGrA57J73G5r7kAQGkvjzhkNwkeHVHqTYywjnrNc5P1IWy9iRHF0R7Hc6tcKIPdVIjq6F2H7F4Z7ZaQ5f8PcOcBVUuUnupl7RToKYPdVKiKRTBOIhQ2YQpy1LkNDjtkuiRJZ1dLFgIQlOwEJUmZxzQAzmSnxSUD/yQp85gGINXDUCUxdbSIWbLjTpKi1guE218tYwXNfZZZ43uWE6GcnATQzV+/+V4z5GtATk7Of81fJFSKF0etHJ4AAAAASUVORK5CYII="
+                          />
+                        </defs>
+                      </svg>
+
+                      Agronegócio
+                    </label>
+                  </div>
+                </div>
+
+                <label for="tipo" class="simulador__label mt-md-5 mt-3"
+                  >Qual o tipo de telhado do imóvel?</label
+                >
+                <select
+                  class="form-select"
+                  aria-label="tipo de imovel"
+                  id="tipo"
+                  required
+                >
+                  <option selected>Selecione o tipo</option>
+                  <option value="residencia">Residência</option>
+                  <option value="empresa">Empresa</option>
+                  <option value="fazenda">Fazenda</option>
+                </select>
+
+                <label for="possui" class="simulador__label mt-md-5 mt-3"
+                  >Já possui um orçamento de energia solar ?</label
+                >
+
+                <div class="d-flex gap-3 sim-nao">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="sim"
+                      checked
+                    />
+                    <label class="form-check-label" for="sim"> Sim </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="nao"
+                    />
+                    <label class="form-check-label" for="nao"> Não </label>
+                  </div>
+                </div>
+
+                <label for="tipo" class="simulador__label mt-md-5 mt-3"
+                  >Quando você prefere instalar o sistema?</label
+                >
+                <select
+                  class="form-select"
+                  aria-label="tipo de imovel"
+                  id="tipo"
+                  required
+                >
+                  <option selected>Selecione a opção</option>
+                  <option value="1">Opção 1</option>
+                  <option value="2">Opção 2</option>
+                  <option value="3">Opção 3</option>
+                </select>
+              </div>
+              <!--first form-->
+
+              <!--second form-->
+              <div data-secondary-form id="second-form">
+                <div
+                  class="d-md-none d-flex align-items-center gap-2 mb-5 active-form"
+                  data-first-step
+                >
+                  <svg
+                    width="50"
+                    height="50"
+                    viewBox="0 0 50 50"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25Z"
+                      fill="#153B69"
+                    />
+                    <path
+                      d="M23.8443 33H27.3003V15.504H21.5163V18.6H23.8443V33Z"
+                      fill="#F9F9F9"
+                    />
+                  </svg>
+                  Dados técnicos
+                </div>
+
+                <div
+                  class="d-md-none d-flex align-items-center gap-2 active-form my-5"
+                  data-second-step
+                >
+                  <svg
+                    width="50"
+                    height="50"
+                    viewBox="0 0 50 50"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25Z"
+                      fill="#E3E3E3"
+                    />
+                    <path
+                      d="M19.1894 32.76H31.0454V29.976H23.9654C26.7494 27.624 30.6614 24.456 30.6614 20.4C30.6614 17.352 28.7654 15.12 24.9974 15.12C21.8534 15.12 19.2854 16.968 19.1654 20.976H22.4294C22.4534 19.128 23.3414 17.976 24.9494 17.976C26.6054 17.976 27.3014 19.032 27.3014 20.592C27.3014 23.808 23.1494 26.904 19.1894 30.264V32.76Z"
+                      fill="#153B69"
+                      fill-opacity="0.6"
+                    />
+                  </svg>
+
+                  Dados pessoais
+                </div>
+                <div class="mb-3">
+                  <label class="simulador__label mt-md-5 mt-3" for="nome"
+                    >Nome completo</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nome"
+                    placeholder="Digite seu nome completo"
+                  />
+                </div>
+
+                <div class="d-flex flex-md-row flex-column gap-md-3">
+                  <div class="mb-3 medium-input">
+                    <label class="simulador__label mt-md-5 mt-3" for="email"
+                      >E-mail</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Digite seu e-mail"
+                    />
+                  </div>
+
+                  <div class="mb-3 medium-input">
+                    <label class="simulador__label mt-md-5 mt-3" for="telefone"
+                      >Telefone</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="telefone"
+                      placeholder="(xxx)xxxxx-xxxx"
+                    />
+                  </div>
+                </div>
+
+                <div class="d-flex flex-md-row flex-column gap-md-3">
+                  <div class="mb-3 medium-input">
+                    <label for="estado" class="simulador__label mt-md-5 mt-3"
+                      >Selecione seu estado</label
+                    >
+                    <select class="form-select" aria-label="estado" id="estado">
+                      <option selected>Selecionar</option>
+                    </select>
+                  </div>
+
+                  <div class="mb-3 medium-input">
+                    <label for="cidade" class="simulador__label mt-md-5 mt-3"
+                      >Selecione sua cidade</label
+                    >
+                    <select class="form-select" aria-label="cidade" id="cidade">
+                      <option selected>Selecionar</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!--fim do second form-->
+
+               <!--resultado-->
+               <div data-secondary-form id="third-form" class="form-active">
+                <div
+                  class="d-md-none d-flex align-items-center gap-2 mb-5 active-form"
+                  data-first-step
+                >
+                  <svg
+                    width="50"
+                    height="50"
+                    viewBox="0 0 50 50"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25Z"
+                      fill="#153B69"
+                    />
+                    <path
+                      d="M23.8443 33H27.3003V15.504H21.5163V18.6H23.8443V33Z"
+                      fill="#F9F9F9"
+                    />
+                  </svg>
+                  Dados técnicos
+                </div>
+
+                <div
+                  class="d-md-none d-flex align-items-center gap-2 active-form my-5"
+                  data-second-step
+                >
+                  <svg
+                    width="50"
+                    height="50"
+                    viewBox="0 0 50 50"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25Z"
+                      fill="#E3E3E3"
+                    />
+                    <path
+                      d="M19.1894 32.76H31.0454V29.976H23.9654C26.7494 27.624 30.6614 24.456 30.6614 20.4C30.6614 17.352 28.7654 15.12 24.9974 15.12C21.8534 15.12 19.2854 16.968 19.1654 20.976H22.4294C22.4534 19.128 23.3414 17.976 24.9494 17.976C26.6054 17.976 27.3014 19.032 27.3014 20.592C27.3014 23.808 23.1494 26.904 19.1894 30.264V32.76Z"
+                      fill="#153B69"
+                      fill-opacity="0.6"
+                    />
+                  </svg>
+
+                  Dados pessoais
+                </div>
+
+                <div
+                class="d-md-none d-flex align-items-center gap-2 active-form my-5"
+                data-second-step
               >
-                <path
-                  opacity="0.1"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z"
-                  fill="white"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M22.6679 10.4995C23.4022 10.701 23.9805 11.2948 24.1768 12.0488C24.5335 13.4153 24.5335 16.2666 24.5335 16.2666C24.5335 16.2666 24.5335 19.1178 24.1768 20.4845C23.9805 21.2385 23.4022 21.8322 22.6679 22.0338C21.3371 22.4 16.0001 22.4 16.0001 22.4C16.0001 22.4 10.6632 22.4 9.3323 22.0338C8.59795 21.8322 8.01962 21.2385 7.82335 20.4845C7.4668 19.1178 7.4668 16.2666 7.4668 16.2666C7.4668 16.2666 7.4668 13.4153 7.82335 12.0488C8.01962 11.2948 8.59795 10.701 9.3323 10.4995C10.6632 10.1333 16.0001 10.1333 16.0001 10.1333C16.0001 10.1333 21.3371 10.1333 22.6679 10.4995ZM14.4001 13.8666V19.1999L18.6668 16.5333L14.4001 13.8666Z"
-                  fill="white"
-                />
-              </svg>
-            </a>
+              <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="50" height="50" rx="25" fill="#153B69"/>
+                <path d="M19.1364 20.112C19.2164 18.512 19.7764 17.28 20.8164 16.416C21.8724 15.536 23.2564 15.096 24.9684 15.096C26.1364 15.096 27.1364 15.304 27.9684 15.72C28.8004 16.12 29.4244 16.672 29.8404 17.376C30.2724 18.064 30.4884 18.848 30.4884 19.728C30.4884 20.736 30.2244 21.592 29.6964 22.296C29.1844 22.984 28.5684 23.448 27.8484 23.688V23.784C28.7764 24.072 29.4964 24.584 30.0084 25.32C30.5364 26.056 30.8004 27 30.8004 28.152C30.8004 29.112 30.5764 29.968 30.1284 30.72C29.6964 31.472 29.0484 32.064 28.1844 32.496C27.3364 32.912 26.3124 33.12 25.1124 33.12C23.3044 33.12 21.8324 32.664 20.6964 31.752C19.5604 30.84 18.9604 29.496 18.8964 27.72H22.1604C22.1924 28.504 22.4564 29.136 22.9524 29.616C23.4644 30.08 24.1604 30.312 25.0404 30.312C25.8564 30.312 26.4804 30.088 26.9124 29.64C27.3604 29.176 27.5844 28.584 27.5844 27.864C27.5844 26.904 27.2804 26.216 26.6724 25.8C26.0644 25.384 25.1204 25.176 23.8404 25.176H23.1444V22.416H23.8404C26.1124 22.416 27.2484 21.656 27.2484 20.136C27.2484 19.448 27.0404 18.912 26.6244 18.528C26.2244 18.144 25.6404 17.952 24.8724 17.952C24.1204 17.952 23.5364 18.16 23.1204 18.576C22.7204 18.976 22.4884 19.488 22.4244 20.112H19.1364Z" fill="white"/>
+                </svg>
+                
+
+                Resultado
+
+              
+              </div>
+
+              <strong class="third-step-title">Especificações Técnicas</strong>
+
+              <div class="d-flex flex-wrap justify-content-md-between justify-content-center">
+                <div class="circle">
+                    <img src="images/potencia.svg" alt="icone">
+                    <p>Potência do sistema</p>
+                    <span>3,63 kWp</span>
+                </div>
+
+                <div class="circle">
+                    <img src="images/painel-icon.svg" alt="icone">
+                        
+                    <p>Número de módulos</p>
+                    <span>11 módulos</span>
+                </div>
+
+                <div class="circle">
+                    <img src="images/sun.svg" alt="icone">
+                        
+                    <p>Produção estimada</p>
+                    <span>374 kWh/mês</span>
+                </div>
+             </div>
+
+             <div class="d-flex flex-wrap justify-content-between align-items-center">
+                 <div class="pill">
+                    <p>Área Mínima Necessaria</p>
+                    <span>24.75 m²</span>
+                 </div>
+
+                 <div class="pill">
+                    <p>Rentabilidade Média (TIR)</p>
+                    <span>23%</span>
+                 </div>
+             </div>
+
+
+             <strong class="third-step-title mt-5">Especificações Finaceiras</strong>
+
+              <div class="d-flex flex-wrap justify-content-md-between justify-content-center">
+                <div class="circle">
+                    <img src="images/money.svg" alt="icon">
+                    <p>Valor estimado</p>
+                    <span>R$ 14.553,00</span>
+                </div>
+
+                <div class="circle">
+                    <img src="images/economy-icon.svg" alt="icone">
+                        
+                    <p>Economia mensal</p>
+                    <span>R$ 187,22</span>
+                </div>
+
+                <div class="circle">
+                    <img src="images/percela-icon.svg" alt="icone">
+                        
+                    <p>Parcela do Financiamento</p>
+                    <span>60x R$ 332,61</span>
+                </div>
+
+             </div>
+
+             
+             <strong class="third-step-title mt-5">Alguns Beneficios</strong>
+
+              <div class="d-flex flex-wrap justify-content-md-between justify-content-center">
+                <div class="circle">
+                    <img src="images/money-icon.svg" alt="icon">
+                    <span>Rentabilidade</span>
+                    <p>Retorno de 25-35% ao ano.</p>
+                </div>
+
+                <div class="circle">
+                    <img src="images/comercio.svg" alt="icone">
+                        
+                    <span>Valorização</span>
+                    <p>do seu imõvel</p>
+                </div>
+
+                <div class="circle">
+                    <img src="images/timer.svg" alt="icone">
+                        
+                    <span>Vida Útil</span>
+                    <p>Garantia de Eficiência de 25 anos</p>
+                </div>
+
+             </div>
+
+              </div>
+
+              <!--resultado-->
+
+
+              <div
+                class="d-flex justify-content-between align-items-center max-w-645"
+              >
+                <div
+                  class="d-flex justify-content-between align-items-center max-w-645"
+                >
+                  <div class="d-flex justify-content-start my-5 max-w-200">
+                    <button
+                      data-prev-form
+                      class="btn form__btn-secondary"
+                      type="button"
+                    >
+                      &#60; Voltar
+                    </button>
+                  </div>
+
+                  <div class="d-flex justify-content-end my-5 max-w-200">
+                    <button data-next-form class="btn form__btn" type="button">
+                      Avançar &#62;
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="d-flex justify-content-end my-5 max-w-200"
+                  data-submit
+                >
+                  <button class="btn form__btn" type="submit">
+                    Avançar &#62;
+                  </button>
+                </div>
+              </div>
+
+              <!--etapas mobile-->
+              <div
+                class="d-md-none d-flex align-items-center gap-2 next-form"
+                data-mobile-second-step
+              >
+                <svg
+                  width="50"
+                  height="50"
+                  viewBox="0 0 50 50"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25Z"
+                    fill="#E3E3E3"
+                  />
+                  <path
+                    d="M19.1894 32.76H31.0454V29.976H23.9654C26.7494 27.624 30.6614 24.456 30.6614 20.4C30.6614 17.352 28.7654 15.12 24.9974 15.12C21.8534 15.12 19.2854 16.968 19.1654 20.976H22.4294C22.4534 19.128 23.3414 17.976 24.9494 17.976C26.6054 17.976 27.3014 19.032 27.3014 20.592C27.3014 23.808 23.1494 26.904 19.1894 30.264V32.76Z"
+                    fill="#153B69"
+                    fill-opacity="0.6"
+                  />
+                </svg>
+
+                Dados pessoais
+              </div>
+
+              <div
+                class="d-md-none d-flex align-items-center gap-2 next-form mt-5"
+                data-mobile-third-step
+              >
+                <svg
+                  width="50"
+                  height="50"
+                  viewBox="0 0 50 50"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="50" height="50" rx="25" fill="#E3E3E3" />
+                  <path
+                    d="M19.1364 20.112C19.2164 18.512 19.7764 17.28 20.8164 16.416C21.8724 15.536 23.2564 15.096 24.9684 15.096C26.1364 15.096 27.1364 15.304 27.9684 15.72C28.8004 16.12 29.4244 16.672 29.8404 17.376C30.2724 18.064 30.4884 18.848 30.4884 19.728C30.4884 20.736 30.2244 21.592 29.6964 22.296C29.1844 22.984 28.5684 23.448 27.8484 23.688V23.784C28.7764 24.072 29.4964 24.584 30.0084 25.32C30.5364 26.056 30.8004 27 30.8004 28.152C30.8004 29.112 30.5764 29.968 30.1284 30.72C29.6964 31.472 29.0484 32.064 28.1844 32.496C27.3364 32.912 26.3124 33.12 25.1124 33.12C23.3044 33.12 21.8324 32.664 20.6964 31.752C19.5604 30.84 18.9604 29.496 18.8964 27.72H22.1604C22.1924 28.504 22.4564 29.136 22.9524 29.616C23.4644 30.08 24.1604 30.312 25.0404 30.312C25.8564 30.312 26.4804 30.088 26.9124 29.64C27.3604 29.176 27.5844 28.584 27.5844 27.864C27.5844 26.904 27.2804 26.216 26.6724 25.8C26.0644 25.384 25.1204 25.176 23.8404 25.176H23.1444V22.416H23.8404C26.1124 22.416 27.2484 21.656 27.2484 20.136C27.2484 19.448 27.0404 18.912 26.6244 18.528C26.2244 18.144 25.6404 17.952 24.8724 17.952C24.1204 17.952 23.5364 18.16 23.1204 18.576C22.7204 18.976 22.4884 19.488 22.4244 20.112H19.1364Z"
+                    fill="#677E9A"
+                  />
+                </svg>
+
+                Resultado
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              class="img-fluid"
+              src="images/logo-footer.png"
+              alt="logo da empresa"
+            />
+            <p>
+              Lorem ipsum dolor amet, consectetur adipiscing elit. Eget nisl
+              nunc quam ac sed turpis volutpat. Cursus sed massa non nisi,
+              placerat.
+            </p>
+            <div
+              class="d-flex justify-content-md-start justify-content-center gap-2 my-3"
+            >
+              <a href="#">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    opacity="0.1"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z"
+                    fill="white"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16.0009 7.4668C13.6834 7.4668 13.3925 7.47693 12.4823 7.51835C11.5739 7.55995 10.9538 7.70378 10.4112 7.9148C9.84993 8.13276 9.37384 8.42432 8.89952 8.89881C8.42485 9.37313 8.13329 9.84922 7.91462 10.4103C7.70307 10.9531 7.55906 11.5733 7.51818 12.4814C7.47746 13.3917 7.4668 13.6827 7.4668 16.0002C7.4668 18.3178 7.47711 18.6077 7.51835 19.5179C7.56013 20.4264 7.70395 21.0465 7.9148 21.5891C8.13294 22.1503 8.4245 22.6264 8.89899 23.1007C9.37313 23.5754 9.84922 23.8677 10.4101 24.0856C10.9531 24.2967 11.5733 24.4405 12.4816 24.4821C13.3918 24.5235 13.6825 24.5336 15.9999 24.5336C18.3176 24.5336 18.6075 24.5235 19.5178 24.4821C20.4262 24.4405 21.047 24.2967 21.59 24.0856C22.151 23.8677 22.6264 23.5754 23.1006 23.1007C23.5752 22.6264 23.8668 22.1503 24.0855 21.5893C24.2952 21.0465 24.4392 20.4262 24.4819 19.5181C24.5228 18.6079 24.5335 18.3178 24.5335 16.0002C24.5335 13.6827 24.5228 13.3918 24.4819 12.4816C24.4392 11.5732 24.2952 10.9531 24.0855 10.4105C23.8668 9.84922 23.5752 9.37313 23.1006 8.89881C22.6259 8.42414 22.1512 8.13258 21.5894 7.9148C21.0454 7.70378 20.425 7.55995 19.5165 7.51835C18.6063 7.47693 18.3165 7.4668 15.9983 7.4668H16.0009ZM15.2354 9.00457C15.4626 9.00421 15.7161 9.00457 16.0009 9.00457C18.2793 9.00457 18.5494 9.01274 19.4491 9.05363C20.2811 9.09168 20.7327 9.2307 21.0335 9.3475C21.4317 9.50217 21.7156 9.68706 22.0141 9.98573C22.3128 10.2844 22.4977 10.5688 22.6527 10.9671C22.7695 11.2675 22.9087 11.7191 22.9466 12.5511C22.9875 13.4507 22.9963 13.7209 22.9963 15.9982C22.9963 18.2756 22.9875 18.5458 22.9466 19.4454C22.9085 20.2774 22.7695 20.729 22.6527 21.0294C22.498 21.4276 22.3128 21.7112 22.0141 22.0097C21.7154 22.3084 21.4319 22.4932 21.0335 22.6479C20.733 22.7652 20.2811 22.9039 19.4491 22.942C18.5495 22.9828 18.2793 22.9917 16.0009 22.9917C13.7223 22.9917 13.4522 22.9828 12.5527 22.942C11.7207 22.9036 11.2691 22.7645 10.9681 22.6477C10.5699 22.4931 10.2855 22.3082 9.98679 22.0095C9.68812 21.7108 9.50323 21.4271 9.3482 21.0287C9.2314 20.7282 9.0922 20.2767 9.05433 19.4447C9.01344 18.5451 9.00527 18.2749 9.00527 15.9961C9.00527 13.7173 9.01344 13.4485 9.05433 12.549C9.09238 11.717 9.2314 11.2654 9.3482 10.9646C9.50287 10.5664 9.68812 10.2819 9.98679 9.98324C10.2855 9.68457 10.5699 9.49968 10.9681 9.34466C11.2689 9.22732 11.7207 9.08866 12.5527 9.05043C13.3399 9.01488 13.645 9.00421 15.2354 9.00243V9.00457ZM20.556 10.4215C19.9906 10.4215 19.532 10.8796 19.532 11.4451C19.532 12.0105 19.9906 12.4691 20.556 12.4691C21.1213 12.4691 21.58 12.0105 21.58 11.4451C21.58 10.8798 21.1213 10.4215 20.556 10.4215ZM16.0009 11.6179C13.5808 11.6179 11.6187 13.5801 11.6187 16.0002C11.6187 18.4203 13.5808 20.3816 16.0009 20.3816C18.4211 20.3816 20.3825 18.4203 20.3825 16.0002C20.3825 13.5801 18.4211 11.6179 16.0009 11.6179ZM16.0009 13.1557C17.5718 13.1557 18.8454 14.4292 18.8454 16.0002C18.8454 17.5711 17.5718 18.8447 16.0009 18.8447C14.4299 18.8447 13.1564 17.5711 13.1564 16.0002C13.1564 14.4292 14.4299 13.1557 16.0009 13.1557Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+
+              <a href="#">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    opacity="0.1"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z"
+                    fill="white"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M24.5335 15.9883C24.5335 16.5654 24.4747 17.1417 24.3593 17.7034C24.2468 18.2518 24.0801 18.7902 23.8618 19.3049C23.6485 19.8105 23.3839 20.2977 23.0747 20.7521C22.7701 21.2036 22.4192 21.6271 22.0338 22.0133C21.6475 22.3977 21.2225 22.7476 20.7712 23.0535C20.3154 23.3605 19.8275 23.6247 19.3216 23.8391C18.8061 24.0562 18.2665 24.2227 17.7186 24.335C17.1561 24.4507 16.5777 24.5098 15.9997 24.5098C15.4214 24.5098 14.843 24.4507 14.2813 24.335C13.7326 24.2227 13.1929 24.0562 12.6779 23.8391C12.1721 23.6247 11.6837 23.3605 11.2278 23.0535C10.7766 22.7476 10.3516 22.3977 9.96611 22.0133C9.58027 21.6271 9.2294 21.2036 8.92439 20.7521C8.61687 20.2977 8.35184 19.8105 8.13768 19.3049C7.9193 18.7902 7.75224 18.2518 7.63931 17.7034C7.52515 17.1417 7.4668 16.5654 7.4668 15.9883C7.4668 15.4108 7.52511 14.8332 7.63934 14.2727C7.75227 13.7243 7.91934 13.1851 8.13771 12.6712C8.35187 12.1653 8.6169 11.6776 8.92442 11.2232C9.22943 10.7714 9.5803 10.3486 9.96614 9.96207C10.3516 9.57759 10.7766 9.22852 11.2279 8.92312C11.6837 8.61478 12.1721 8.35059 12.6779 8.13587C13.193 7.91822 13.7326 7.75139 14.2814 7.63989C14.8431 7.52506 15.4214 7.4668 15.9998 7.4668C16.5777 7.4668 17.1561 7.52506 17.7186 7.63989C18.2665 7.75142 18.8061 7.91825 19.3216 8.13587C19.8275 8.35056 20.3154 8.61478 20.7713 8.92312C21.2225 9.22852 21.6476 9.57759 22.0338 9.96207C22.4193 10.3486 22.7701 10.7714 23.0747 11.2232C23.3839 11.6776 23.6485 12.1653 23.8618 12.6712C24.0801 13.1851 24.2468 13.7243 24.3593 14.2727C24.4747 14.8332 24.5335 15.4108 24.5335 15.9883ZM12.8904 9.40618C10.8582 10.3645 9.34143 12.2343 8.86848 14.4879C9.0606 14.4895 12.0974 14.5278 15.5963 13.5995C14.335 11.3618 12.9875 9.53562 12.8904 9.40618ZM16.2001 14.7201C12.4479 15.8418 8.84724 15.7611 8.71808 15.7561C8.71597 15.8343 8.71223 15.91 8.71223 15.9883C8.71223 17.8577 9.41851 19.562 10.5794 20.8507C10.5769 20.8469 12.5712 17.3139 16.5039 16.0441C16.5989 16.0124 16.6956 15.9841 16.7914 15.9567C16.6085 15.5431 16.4089 15.1287 16.2001 14.7201ZM20.8125 10.5267C19.5295 9.39701 17.8448 8.71176 15.9997 8.71176C15.4076 8.71176 14.833 8.78333 14.2825 8.91564C14.3917 9.06212 15.7605 10.8754 17.0068 13.1605C19.7566 12.1312 20.7945 10.5533 20.8125 10.5267ZM17.2882 17.1625C17.2719 17.1679 17.2557 17.1725 17.2398 17.1783C12.9401 18.6751 11.536 21.6915 11.5208 21.7245C12.7579 22.6852 14.3097 23.2648 15.9998 23.2648C17.009 23.2648 17.9703 23.0596 18.8449 22.6881C18.737 22.0523 18.3136 19.8238 17.2882 17.1625ZM20.072 22.0232C21.7083 20.9206 22.8705 19.1697 23.1946 17.1416C23.0446 17.0934 21.0058 16.4489 18.6536 16.8254C19.6095 19.4485 19.9978 21.5847 20.072 22.0232ZM17.5678 14.2449C17.7369 14.5919 17.9007 14.9451 18.0519 15.3001C18.1057 15.4274 18.1582 15.5522 18.2095 15.677C20.7129 15.3625 23.1793 15.8917 23.2847 15.9133C23.2681 14.1883 22.6501 12.6051 21.6276 11.3656C21.6138 11.3851 20.445 13.0715 17.5678 14.2449Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+
+              <a href="#">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    opacity="0.1"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z"
+                    fill="white"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M15.5208 13.0051L15.5544 13.5587L14.9948 13.4909C12.9579 13.2311 11.1784 12.3498 9.66756 10.8696L8.92891 10.1352L8.73865 10.6776C8.33575 11.8865 8.59316 13.1633 9.43253 14.022C9.8802 14.4965 9.77948 14.5643 9.00725 14.2819C8.73865 14.1915 8.50363 14.1237 8.48124 14.1576C8.4029 14.2367 8.6715 15.2648 8.88414 15.6716C9.17513 16.2365 9.76828 16.7902 10.4174 17.1178L10.9658 17.3777L10.3167 17.389C9.68994 17.389 9.66756 17.4003 9.73471 17.6376C9.95854 18.372 10.8427 19.1516 11.8276 19.4906L12.5214 19.7278L11.9171 20.0894C11.0218 20.6091 9.96973 20.9029 8.91772 20.9255C8.41409 20.9368 8 20.982 8 21.0159C8 21.1289 9.36538 21.7616 10.16 22.0102C12.5438 22.7446 15.3753 22.4282 17.5017 21.1741C19.0126 20.2815 20.5235 18.5076 21.2286 16.7902C21.6091 15.875 21.9896 14.2028 21.9896 13.4006C21.9896 12.8808 22.0232 12.813 22.6499 12.1916C23.0192 11.83 23.3662 11.4346 23.4333 11.3216C23.5452 11.1069 23.534 11.1069 22.9633 11.299C22.012 11.638 21.8777 11.5928 22.3477 11.0843C22.6947 10.7228 23.1088 10.0674 23.1088 9.87536C23.1088 9.84146 22.9409 9.89796 22.7506 9.99964C22.5492 10.1126 22.1015 10.2821 21.7658 10.3838L21.1614 10.5759L20.613 10.203C20.3108 9.99964 19.8856 9.77367 19.6617 9.70588C19.0909 9.5477 18.218 9.57029 17.7032 9.75107C16.3042 10.2595 15.4201 11.5702 15.5208 13.0051Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+
+              <a href="#">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    opacity="0.1"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z"
+                    fill="white"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M22.6679 10.4995C23.4022 10.701 23.9805 11.2948 24.1768 12.0488C24.5335 13.4153 24.5335 16.2666 24.5335 16.2666C24.5335 16.2666 24.5335 19.1178 24.1768 20.4845C23.9805 21.2385 23.4022 21.8322 22.6679 22.0338C21.3371 22.4 16.0001 22.4 16.0001 22.4C16.0001 22.4 10.6632 22.4 9.3323 22.0338C8.59795 21.8322 8.01962 21.2385 7.82335 20.4845C7.4668 19.1178 7.4668 16.2666 7.4668 16.2666C7.4668 16.2666 7.4668 13.4153 7.82335 12.0488C8.01962 11.2948 8.59795 10.701 9.3323 10.4995C10.6632 10.1333 16.0001 10.1333 16.0001 10.1333C16.0001 10.1333 21.3371 10.1333 22.6679 10.4995ZM14.4001 13.8666V19.1999L18.6668 16.5333L14.4001 13.8666Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <ul class="d-flex flex-column gap-2">
+              <li><h4>Links</h4></li>
+              <li class="mt-3"><a href="index.html">Inicio</a></li>
+              <li><a href="como-funciona.html">Como funciona?</a></li>
+              <li><a href="simulador.html">Simulação</a></li>
+              <li>
+                <a href="perguntas-frequentes.html">Perguntas Frequentes</a>
+              </li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <ul
+              class="d-flex align-items-md-start align-items-center flex-column gap-2"
+            >
+              <li><h4>Fale conosco</h4></li>
+              <li class="mt-3 d-flex align-items-center gap-2">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16.9395 3C18.2805 3 19.5705 3.53 20.5195 4.481C21.4695 5.43 22.0005 6.71 22.0005 8.05V15.95C22.0005 18.74 19.7305 21 16.9395 21H7.06049C4.26949 21 2.00049 18.74 2.00049 15.95V8.05C2.00049 5.26 4.25949 3 7.06049 3H16.9395ZM18.5305 9.54L18.6105 9.46C18.8495 9.17 18.8495 8.75 18.5995 8.46C18.4605 8.311 18.2695 8.22 18.0705 8.2C17.8605 8.189 17.6605 8.26 17.5095 8.4L13.0005 12C12.4205 12.481 11.5895 12.481 11.0005 12L6.50049 8.4C6.18949 8.17 5.75949 8.2 5.50049 8.47C5.23049 8.74 5.20049 9.17 5.42949 9.47L5.56049 9.6L10.1105 13.15C10.6705 13.59 11.3495 13.83 12.0605 13.83C12.7695 13.83 13.4605 13.59 14.0195 13.15L18.5305 9.54Z"
+                    fill="#F9F9F9"
+                  />
+                </svg>
+                <a href="#">contato@yesol.com</a>
+              </li>
+              <li class="mt-3 d-flex align-items-center gap-2">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5.00846 10.6948C5.00846 10.0762 5.01591 9.45751 5.02339 8.836L5.02339 8.83599C5.02719 8.52089 5.03099 8.20506 5.03384 7.88813C5.03384 4.48283 7.16556 2 10.1094 2H13.8906C16.8344 2 18.9662 4.48283 18.9662 7.88813C18.9915 9.25221 19 10.6163 19 11.9902C19 13.3641 18.9915 14.7478 18.9662 16.1119C18.9662 19.5172 16.8344 22 13.8906 22H10.1094C7.16556 22 5.03384 19.5172 5.03384 16.1021C5.01692 14.8165 5 13.5015 5 12.1668L5.00846 10.6948ZM13.28 19.6402V19.8002C13.28 20.4738 12.7168 21.0002 12 21.0002C11.3003 21.0002 10.72 20.4738 10.72 19.8002V19.6402C10.72 18.9842 11.3003 18.4402 12 18.4402C12.7168 18.4402 13.28 18.9842 13.28 19.6402ZM7.01671 8.44364C7.01136 8.84763 7.00604 9.24974 7.00604 9.65186L7 10.6087C7 11.4762 7.01208 12.331 7.02417 13.1666C7.02417 15.3864 8.54683 17.0002 10.6495 17.0002H13.3505C15.4532 17.0002 16.9758 15.3864 16.9758 13.173C16.994 12.2863 17 11.3869 17 10.4939C17 9.60083 16.994 8.71418 16.9758 7.82753C16.9758 5.61408 15.4532 4.00024 13.3505 4.00024H10.6495C8.54683 4.00024 7.02417 5.61408 7.02417 7.82753C7.02214 8.03354 7.01942 8.23883 7.01671 8.44364Z"
+                    fill="#F9F9F9"
+                  />
+                </svg>
+
+                <a href="#">+55 (61)98586-6016</a>
+              </li>
+              <li class="mt-3 d-flex align-items-center gap-2">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12.03 2.00004C14.29 2.01004 16.45 2.91004 18.03 4.49004C19.62 6.08004 20.51 8.23004 20.5 10.46V10.51C20.44 13.54 18.74 16.33 16.62 18.51C15.42 19.74 14.09 20.83 12.64 21.75C12.25 22.08 11.68 22.08 11.29 21.75C9.14 20.35 7.24 18.59 5.7 16.54C4.35 14.76 3.58 12.62 3.5 10.39C3.52 5.74004 7.34 1.99004 12.03 2.00004ZM12.03 13.26C12.74 13.26 13.42 12.99 13.92 12.5C14.44 11.99 14.731 11.311 14.731 10.6C14.731 9.12004 13.52 7.93004 12.03 7.93004C10.54 7.93004 9.34 9.12004 9.34 10.6C9.34 12.061 10.52 13.24 12 13.26H12.03Z"
+                    fill="#F9F9F9"
+                  />
+                </svg>
+
+                <a href="#">7101021 Brasilia-DF Guara 1 BLoco B 307</a>
+              </li>
+            </ul>
           </div>
         </div>
 
-        <div class="col-md-3">
-          <ul class="d-flex flex-column gap-1">
-            <li><h4>Links</h4></li>
-            <li class="mt-3"><a href="index.html">Inicio</a></li>
-            <li><a href="como-funciona.html">Como funciona?</a></li>
-            <li><a href="simulador.html">Simulação</a></li>
-            <li><a href="perguntas-frequentes.html">Perguntas Frequentes</a></li>
-            <li><a href="blog.html">Blog</a></li>
-          </ul>
-        </div>
-
-        <div class="col-md-3">
-          <ul class="d-flex align-items-md-start align-items-center flex-column gap-1">
-            <li><h4>Fale conosco</h4></li>
-            <li class="mt-3 d-flex align-items-center gap-1">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M16.9395 3C18.2805 3 19.5705 3.53 20.5195 4.481C21.4695 5.43 22.0005 6.71 22.0005 8.05V15.95C22.0005 18.74 19.7305 21 16.9395 21H7.06049C4.26949 21 2.00049 18.74 2.00049 15.95V8.05C2.00049 5.26 4.25949 3 7.06049 3H16.9395ZM18.5305 9.54L18.6105 9.46C18.8495 9.17 18.8495 8.75 18.5995 8.46C18.4605 8.311 18.2695 8.22 18.0705 8.2C17.8605 8.189 17.6605 8.26 17.5095 8.4L13.0005 12C12.4205 12.481 11.5895 12.481 11.0005 12L6.50049 8.4C6.18949 8.17 5.75949 8.2 5.50049 8.47C5.23049 8.74 5.20049 9.17 5.42949 9.47L5.56049 9.6L10.1105 13.15C10.6705 13.59 11.3495 13.83 12.0605 13.83C12.7695 13.83 13.4605 13.59 14.0195 13.15L18.5305 9.54Z"
-                  fill="#F9F9F9"
-                />
-              </svg>
-              <a href="#">contato@yesol.com</a>
-            </li>
-            <li class="mt-3 d-flex align-items-center gap-1">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M5.00846 10.6948C5.00846 10.0762 5.01591 9.45751 5.02339 8.836L5.02339 8.83599C5.02719 8.52089 5.03099 8.20506 5.03384 7.88813C5.03384 4.48283 7.16556 2 10.1094 2H13.8906C16.8344 2 18.9662 4.48283 18.9662 7.88813C18.9915 9.25221 19 10.6163 19 11.9902C19 13.3641 18.9915 14.7478 18.9662 16.1119C18.9662 19.5172 16.8344 22 13.8906 22H10.1094C7.16556 22 5.03384 19.5172 5.03384 16.1021C5.01692 14.8165 5 13.5015 5 12.1668L5.00846 10.6948ZM13.28 19.6402V19.8002C13.28 20.4738 12.7168 21.0002 12 21.0002C11.3003 21.0002 10.72 20.4738 10.72 19.8002V19.6402C10.72 18.9842 11.3003 18.4402 12 18.4402C12.7168 18.4402 13.28 18.9842 13.28 19.6402ZM7.01671 8.44364C7.01136 8.84763 7.00604 9.24974 7.00604 9.65186L7 10.6087C7 11.4762 7.01208 12.331 7.02417 13.1666C7.02417 15.3864 8.54683 17.0002 10.6495 17.0002H13.3505C15.4532 17.0002 16.9758 15.3864 16.9758 13.173C16.994 12.2863 17 11.3869 17 10.4939C17 9.60083 16.994 8.71418 16.9758 7.82753C16.9758 5.61408 15.4532 4.00024 13.3505 4.00024H10.6495C8.54683 4.00024 7.02417 5.61408 7.02417 7.82753C7.02214 8.03354 7.01942 8.23883 7.01671 8.44364Z"
-                  fill="#F9F9F9"
-                />
-              </svg>
-
-              <a href="#">+55 (61)98586-6016</a>
-            </li>
-            <li class="mt-3 d-flex align-items-center gap-1">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M12.03 2.00004C14.29 2.01004 16.45 2.91004 18.03 4.49004C19.62 6.08004 20.51 8.23004 20.5 10.46V10.51C20.44 13.54 18.74 16.33 16.62 18.51C15.42 19.74 14.09 20.83 12.64 21.75C12.25 22.08 11.68 22.08 11.29 21.75C9.14 20.35 7.24 18.59 5.7 16.54C4.35 14.76 3.58 12.62 3.5 10.39C3.52 5.74004 7.34 1.99004 12.03 2.00004ZM12.03 13.26C12.74 13.26 13.42 12.99 13.92 12.5C14.44 11.99 14.731 11.311 14.731 10.6C14.731 9.12004 13.52 7.93004 12.03 7.93004C10.54 7.93004 9.34 9.12004 9.34 10.6C9.34 12.061 10.52 13.24 12 13.26H12.03Z"
-                  fill="#F9F9F9"
-                />
-              </svg>
-
-              <a href="#">7101021 Brasilia-DF Guara 1 BLoco B 307</a>
-            </li>
-          </ul>
+        <div
+          class="d-flex flex-md-row flex-column gap-md-2 justify-content-md-between justify-content-center align-items-center mt-4"
+        >
+          <p>Todos os direitos reservados YESOL | ENERGIA SOLAR</p>
+          <p>Termos de uso | Política de Privacidade</p>
         </div>
       </div>
-
-      <div class="d-flex flex-md-row flex-column gap-md-2 justify-content-md-between justify-content-center align-items-center mt-4">
-        <p>Todos os direitos reservados YESOL | ENERGIA SOLAR</p>
-        <p>Termos de uso | Política de Privacidade</p>
-      </div>
-    </div>
-  </footer>
+    </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/menu.js"></script>
     <script src="js/simulador.js"></script>
   </body>
