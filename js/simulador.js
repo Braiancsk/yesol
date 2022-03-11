@@ -2,8 +2,14 @@ let firstStep = document.querySelector('[data-first-step]')
 let secondStep = document.querySelector('[data-second-step]')
 let thirdStep = document.querySelector('[data-third-step]')
 
+let mobileStepFirst = document.querySelectorAll('[data-mobile-first]')
+let mobileStepSecond = document.querySelectorAll('[data-mobile-second]')
+let mobileStepThird = document.querySelectorAll('[data-mobile-third]')
+let contact = document.querySelector('[data-contact]')
+
 let firstForm = document.querySelector('[data-first-form]')
 let secondForm = document.querySelector('[data-secondary-form]')
+let thirdForm = document.querySelector('[data-third-form]')
 let submitBtn= document.querySelector('[data-submit]')
 let nextForm = document.querySelector('[data-next-form]')
 let prevForm = document.querySelector('[data-prev-form]')
@@ -25,7 +31,7 @@ nextForm.addEventListener('click',()=>{
           form.reportValidity()
         return
     }
-    
+
     mobileSecondStep.classList.add('d-none')
     nextForm.parentNode.classList.add('d-none')
     firstStep.classList.add('next-form')
@@ -68,11 +74,59 @@ const checkFormState = () =>{
         prevForm.classList.add('d-none')
         submitBtn.classList.add('d-none')
         nextForm.classList.remove('d-none')
+        contact.classList.add('d-none')
+
+        mobileStepFirst.forEach(el =>{
+            el.classList.add('active-form')
+        })
+        mobileStepSecond.forEach(el =>{
+            el.classList.remove('active-form')
+        })
+        mobileStepThird.forEach(el =>{
+            el.classList.remove('active-form')
+        })
     }
     if(secondForm.classList.contains('form-active')){
         submitBtn.classList.remove('d-none')
         nextForm.classList.add('d-none')
         prevForm.classList.remove('d-none')
+        contact.classList.add('d-none')
+        mobileStepFirst.forEach(el =>{
+            el.classList.remove('active-form')
+        })
+        mobileStepSecond.forEach(el =>{
+            el.classList.add('active-form')
+        })
+        mobileStepThird.forEach(el =>{
+            el.classList.remove('active-form')
+        })
+
+    }
+
+    if(thirdForm.classList.contains('form-active')){
+        submitBtn.classList.add('d-none')
+        nextForm.classList.add('d-none')
+        prevForm.classList.add('d-none')
+        mobileSecondStep.classList.add('d-none')
+        mobileThirdStep.classList.add('d-none')
+
+        mobileStepFirst.forEach(el =>{
+            el.classList.remove('active-form')
+        })
+        mobileStepSecond.forEach(el =>{
+            el.classList.remove('active-form')
+        })
+        mobileStepThird.forEach(el =>{
+            el.classList.add('active-form')
+        })
+
+        contact.classList.remove('d-none')
+        firstStep.classList.add('next-form')
+        firstStep.classList.remove('active-form')
+        secondStep.classList.remove('active-form')
+        secondStep.classList.add('next-form')
+        thirdStep.classList.remove('next-form')
+        thirdStep.classList.add('active-form')
     }
 
 }
@@ -100,6 +154,14 @@ submitBtn.addEventListener('click',()=>{
             return
         }
     })
+})
+
+form.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    firstForm.classList.remove('form-active')
+    secondForm.classList.remove('form-active')
+    thirdForm.classList.add('form-active')
+    checkFormState()
 })
 
 
