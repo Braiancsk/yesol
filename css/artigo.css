@@ -338,7 +338,7 @@ section.faq {
   text-align: center;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1440px) {
   html {
     font-size: 93.75%;
   }
@@ -349,6 +349,9 @@ section.faq {
   }
 }
 @media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
   .comentario__area button {
     max-width: 100%;
     margin: 1rem 0;
@@ -359,11 +362,6 @@ section.faq {
   }
   .veja__mais a {
     display: block;
-  }
-}
-@media (max-width: 720px) {
-  html {
-    font-size: 87.5%;
   }
 }
 @media (max-width: 574px) {

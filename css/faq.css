@@ -172,7 +172,7 @@ section.faq {
     left: -95px;
   }
 }
-@media (max-width: 1080px) {
+@media (max-width: 1440px) {
   html {
     font-size: 93.75%;
   }
@@ -187,6 +187,9 @@ section.faq {
   }
 }
 @media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
   .comentario__area button {
     max-width: 100%;
     margin: 1rem 0;
@@ -201,9 +204,6 @@ section.faq {
   }
 }
 @media (max-width: 720px) {
-  html {
-    font-size: 87.5%;
-  }
   .barra__de__pesquisa img {
     top: 45px;
   }
