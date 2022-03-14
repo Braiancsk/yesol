@@ -21,14 +21,18 @@ let mobileSecondStep = document.querySelector('[data-mobile-second-step]')
 let mobileThirdStep  = document.querySelector('[data-mobile-third-step]')
 
 nextForm.addEventListener('click',()=>{
-    if(!form.checkValidity()){
-        Swal.fire({
-            title: 'Preencha todos os campos',
-            text: 'Por favor, Preencha todos os campos antes de continuar',
-            icon: 'error',
-            confirmButtonText: 'Continuar'
-          })
-          form.reportValidity()
+    if(!form.checkValidity()){     
+        if(!form.checkValidity()){
+            Swal.fire({
+                title: 'Preencha todos os campos',
+                text: 'Por favor, Preencha todos os campos antes de continuar',
+                icon: 'error',
+                confirmButtonText: 'Continuar'
+              })
+              form.reportValidity()
+
+        }
+
         return
     }
 
@@ -94,6 +98,9 @@ const checkFormState = () =>{
         mobileStepFirst.forEach(el =>{
             el.classList.remove('active-form')
         })
+        mobileStepFirst.forEach(el =>{
+            el.classList.add('next-form')
+        })
         mobileStepSecond.forEach(el =>{
             el.classList.add('active-form')
         })
@@ -132,6 +139,23 @@ const checkFormState = () =>{
 }
 
 submitBtn.addEventListener('click',()=>{
+    // selects.forEach(select => {
+    //     if(select.value == 'Selecione' || select.value == 'Selecione o tipo'){
+    //         Swal.fire({
+    //             title: 'Selecione uma das opções nos campos suspenso',
+    //             text: 'Por favor, Preencha todos os campos antes de continuar',
+    //             icon: 'error',
+    //             confirmButtonText: 'Continuar'
+    //           })
+    //           form.reportValidity()
+    //         return
+    //     }
+    // })
+})
+
+form.addEventListener('submit',(e)=>{
+    
+    e.preventDefault();
     if(!form.checkValidity()){
         Swal.fire({
             title: 'Preencha todos os campos',
@@ -142,22 +166,7 @@ submitBtn.addEventListener('click',()=>{
           form.reportValidity()
         return
     }
-    selects.forEach(select => {
-        if(select.value == 'Selecione' || select.value == 'Selecione o tipo'){
-            Swal.fire({
-                title: 'Selecione uma das opções nos campos suspenso',
-                text: 'Por favor, Preencha todos os campos antes de continuar',
-                icon: 'error',
-                confirmButtonText: 'Continuar'
-              })
-              form.reportValidity()
-            return
-        }
-    })
-})
 
-form.addEventListener('submit',(e)=>{
-    e.preventDefault();
     firstForm.classList.remove('form-active')
     secondForm.classList.remove('form-active')
     thirdForm.classList.add('form-active')

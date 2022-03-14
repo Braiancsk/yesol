@@ -231,7 +231,7 @@ section.how h2{
 }
 
 .how__icon h6{
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 700;
     text-align: left;
     color:var(--secondary-background);
@@ -264,6 +264,7 @@ section.how h2{
     color:var(--secondary-background);
     font-weight:600;
     font-size:22px;
+    margin: 0;
 }
 
 section.economia{
@@ -653,12 +654,12 @@ section.blog h2 > strong{
     color:#153B69;
     font-size: 24px;
     font-weight: 600;
-    Line-height:29,5px;
+    line-height:29px;
     Letter-spacing:0.25px;
 }
 
 .blog__info p{
-    font-size: 14px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
@@ -688,7 +689,7 @@ section.duvida h2{
 
 @media screen and (max-width: 768px){
     section.hero h1{
-        font-size:38px;
+        font-size:38px!important;
         line-height:40px;
         padding-top: 30px;
     }
@@ -700,7 +701,7 @@ section.duvida h2{
     }
     .hero__content{
         padding-left: 0;
-        padding: 0 30px;
+        padding: 0 20px;
     }
     
     .text-title{
@@ -710,13 +711,16 @@ section.duvida h2{
         font-size:14px;
     }
     .text-subtitle{
-        font-size:18px;
+        font-size:24px;
     }
     .personalizado__content h5, .personalizado__content h2, .personalizado__content p{
         text-align: center;
     }
     .how__icon h6, .how__icon p{
         text-align: center;
+    }
+    .how__icon p , .blog__info p{
+        font-size: 14px!important;
     }
     section.how, section.contato{
         border-radius: 0;
@@ -752,6 +756,7 @@ section.duvida h2{
     }
     section.blog h2, section.duvida h2{
         font-size:24px;
+        line-height:36px;
     }
     section.duvida .btn{
         max-width: 100%;
@@ -810,3 +815,18 @@ section.duvida h2{
     }
 }
 
+@media screen and (max-width: 1440px){
+    section.hero h1{
+        font-size: 70px;
+    }
+    section.hero p{
+        font-size:16px;
+    }
+    .text-paragraph{
+        font-size:16px;
+    }
+    .how__icon p, .blog__info p{
+        font-size:16px;
+    }
+ 
+}

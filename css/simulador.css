@@ -176,12 +176,16 @@ section.simulacao .col-md-3 {
   position: absolute;
   transition: 0.2s ease-in-out;
   z-index: -9999;
+  height: 0;
+  overflow: hidden;
 }
 
 .form-active {
   position: static !important;
   opacity: 1 !important;
   z-index: 9;
+  height: auto!important;
+  overflow: auto!important;
 }
 
 .third-step-title {
@@ -335,6 +339,16 @@ section.contact h3 {
   width: 100%;
 }
 
+
+.squares-container{
+  position: relative;
+}
+.squares-img{
+  position: absolute;
+  top: 500px;
+  left: 0;
+}
+
 @media screen and (max-width: 768px) {
   .form-check-label,
   .medium-input {
@@ -398,10 +412,40 @@ section.contact h3 {
   .pill p{
       line-height:15px;
   }
+  .form__btn-secondary, .form__btn {
+    max-width:160px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
   section.page-title {
     margin: 94px 0 30px 0;
+  }
+}
+
+@media screen and (max-width: 1440px){
+  .contact__text p > b{
+    font-size: 16px;
+  }
+  section.contact h3{
+    font-size:30px;
+  }
+  .whats strong{
+    font-size:30px;
+  }
+  .whats a{
+    font-size:18px;
+  }
+  section.simulacao h2{
+    font-size:38px;
+  }
+  .third-step-title{
+    font-size:26px;
+  }
+  .squares-img{
+    display:none;
+  }
+  .next-form, .active-form{
+    font-size:16px;
   }
 }

@@ -167,7 +167,23 @@ section.projetos .slide {
   .form-check-label{
       padding:4px;
   }
+  section.projetos p{
+    font-size: 14px!important;
+  }
+  section.projetos span{
+    font-size:15px;
+  }
+  section.projetos .projetos__economia, section.projetos .projetos__price{
+    font-size:16px;
+  }
 }
+
+@media screen and (max-width: 1440px){
+  section.projetos p{
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   section.page-title {
     margin: 94px 0 30px 0;
